@@ -1,6 +1,7 @@
 ---
 import { Tick } from "@components/ui/icons";
 import Link from "@components/ui/link.astro";
+import PricingItem from "@components/ui/pricing-item.astro";
 
 const { plan } = Astro.props;
 ---
@@ -29,7 +30,7 @@ const { plan } = Astro.props;
         plan.features.map((item) => (
           <li class="flex items-start gap-3 text-gray-800">
             <Tick class="w-6 h-6" />
-            <span>{item}</span>
+            {typeof item == "object" ? <PricingItem item={item} /> : item}
           </li>
         ))
       }
@@ -37,6 +38,7 @@ const { plan } = Astro.props;
       <Link
         href={plan.button.link || "#"}
         block
+        class="font-bold text-lg"
         style={plan.popular ? "primary" : "outline"}>
         {plan.button.text || "Get Started"}
       </Link>

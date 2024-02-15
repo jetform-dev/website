@@ -4,51 +4,56 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Spesialis Produk Digital",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "JetForm cocok untuk menjual produk seperti e-book, software, video, dan lainnya.",
+    icon: "bx:bxs-check-shield",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Hemat Waktu & Tenaga",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Anda fokus memasarkan produk dan mendatangkan trafik. Bukannya pusing dengan semua masalah toko online Anda.",
+    icon: "bx:bxs-check-shield",
   },
   {
-    title: "On-Demand Components",
+    title: "Jangkau Berbagai Kalangan",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Pembeli melakukan pembayaran dengan metode yang mereka suka seperti QRIS atau Virtual Account.",
+    icon: "bx:bxs-check-shield",
   },
   {
-    title: "Broad Integration",
+    title: "Anti Ribet",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Tinggal upload produk dan anda bisa langsung jualan. Tidak perlu memikirkan biaya maintenance, server, dan lainnya.",
+    icon: "bx:bxs-check-shield",
   },
   {
-    title: "SEO Enabled",
+    title: "Bebas Risiko",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Daftar gratis dan tanpa biaya bulanan. Tidak ada uang terbuang percuma. JetForm hanya untung ketika Anda juga untung.",
+    icon: "bx:bxs-check-shield",
   },
   {
-    title: "Community",
+    title: "Pembeli Happy!",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Pembeli langsung mendapatkan akses ke produk ketika pembayaran berhasil. Goodbye proses manual!",
+    icon: "bx:bxs-check-shield",
   },
 ];
 ---
 
 <div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+  <h2 class="text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight">
+    Menjual lebih banyak, <span class="font-bold text-primary-500"
+      >kerja lebih sedikit.</span
+    >
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Tugas utama Anda sebagai kreator adalah membuat produk yang berkualitas dan
+    bermanfaat. Bukan mengurus dan memastikan toko Anda selalu online. <strong
+      >JetForm mengurangi 50% beban kerja Anda</strong
+    > sehingga Anda bisa fokus pada hal yang jauh lebih penting seperti promosi,
+    pemasaran, dan membuat produk.
   </p>
 </div>
 
@@ -56,11 +61,11 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
