@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+const tos = await getCollection("misc", ({ slug }) => {
+  return slug === "tos";
+});
+const { Content } = await tos[0].render();
+---
+
+<Layout title="Syarat dan Ketentuan penggunaan layanan">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Terms of Service</Fragment>
+      <Fragment slot="desc">Syarat dan Ketentuan penggunaan layanan.</Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto prose prose-md mt-6 max-w-3xl">
+      <Content />
+    </div>
+  </Container>
+</Layout>
