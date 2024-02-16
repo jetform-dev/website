@@ -6,19 +6,22 @@ import "@fontsource-variable/inter/index.css";
 
 export interface Props {
   title: string;
+  description?: string;
+  image?: string;
 }
 
+const { title, description, image } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site,
-).toString();
-
-const { title } = Astro.props;
+const resolvedImageWithDomain = image
+  ? image
+  : new URL("/opengraph.jpg", Astro.site).toString();
 
 const makeTitle = title
   ? title + " | " + "JetForm"
+  : "JetForm - Solusi pintar menjual produk digital";
+const makeDesc = description
+  ? description + " | " + "JetForm"
   : "JetForm - Solusi pintar menjual produk digital";
 ---
 
@@ -33,7 +36,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Kenapa repot membuat toko online dari nol ketika produk anda bisa online dalam hitungan menit dengan JetForm."
+      description={makeDesc}
       canonical={canonicalURL}
       twitter={{
         creator: "@ekaputra07",
@@ -44,7 +47,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `JetForm - Solusi pintar menjual produk digital`,
+          title: makeTitle,
           image: resolvedImageWithDomain,
         },
         image: {

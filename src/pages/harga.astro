@@ -8,14 +8,12 @@ import Accordion from "@components/ui/accordion.astro";
 const pricing = [
   {
     name: "Komisi per transaksi",
-    price: "10%",
+    price: "7,5%",
     popular: true,
     features: [
-      "Komisi sudah termasuk biaya transaksi payment gateway (Midtrans)",
-      "Akses tanpa batas ke semua fitur JetForm",
+      "Komisi sudah termasuk biaya payment gateway (Midtrans), service fee, operasional, dll.",
       "Jumlah produk tidak dibatasi (unlimited)",
       "Volume transaksi tidak dibatasi (unlimited)",
-      "Gratis hosting file produk (foto, ebook, desain, kode sumber, Zip file, dll)",
       "Biaya transaksi penarikan dana Rp. 5,000 (Midtrans)",
       "Support via Email dan WhatsApp",
       ["Statistik produk dan analytics", "segera hadir"],
@@ -51,7 +49,7 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Harga Layanan</Fragment>
       <Fragment slot="desc">
-        Semangat <i>anti ribet</i> juga kami terapkan dalam menentukan harga.
+        Daftar gratis dan tanpa biaya bulanan. <i>Risk free pricing!</i>
       </Fragment>
     </Sectionhead>
 
@@ -70,14 +68,14 @@ const pricing = [
 
       <Accordion
         titles={[
-          "Komisi JetForm 10 pesen? yang lain cuma 5 persen",
+          "Apa maksudnya komisi per transaksi?",
           "Apa ada opsi paket bulanan?",
           "Apa itu Midtrans?",
           "Berapa biaya Midtrans?",
         ]}
         content={[
-          "Komisi 10% sangatlah normal di bidang jasa, JetForm adalah penyedia jasa, jasa meringankan beban anda saat berjualan, memastikan anda menerima pembayaran, memastikan produk anda diterima pembeli sehingga anda punya lebih banyak waktu bersama keluarga tercinta atau makin gencar berpromosi dan memasarkan. Tidak ada biaya pembuatan akun, tidak ada biaya bulanan, benar-benar bebas risiko. Kalaupun JetForm tidak cocok dengan bisnis anda, anda bisa berhenti kapan saja.",
-          "Kami sangat mengerti bahwa apabila volume transaksi Anda cukup banyak maka opsi paket bulanan akan lebih hemat buat Anda. Apabila Anda membutuhkan opsi ini, silahkan hubungi kami sehingga segera bisa dipersiapkan.",
+          "Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu transaksi. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 7,5% dari harga produk tersebut, yaitu Rp. 7,500 dan Anda akan mendapatkan Rp. 92,500. Komisi ini sudah termasuk biaya transaksi dari Midtrans.",
+          "Untuk sementara belum ada. Tetapi kami paham bahwa apabila volume transaksi Anda cukup banyak maka opsi paket bulanan akan lebih hemat buat Anda. Kami menunggu masukan dari pengguna seperti Anda apabila membutuhkan opsi seperti itu. Silahkan hubungi kami apabila anda tertarik dengan opsi paket bulanan.",
           "Midtrans adalah layanan Payment Gateway yang kami pakai untuk menerima pembayaran dari pembeli. Ini memungkinkan kami menerima berbagai jenis opsi pembayaran sehingga bisa menjangkau lebih banyak pembeli. Midtrans adalah perusahaan yang sudah terdaftar di Bank Indonesia dan Kominfo jadi sudah terpercaya. Silahkan kunjungi website Midtrans untuk informasi lebih lanjut: https://midtrans.com",
           "Untuk detail biaya dari Midtrans silahkan Anda kunjungi website mereka di https://midtrans.com/pricing. Seperti yang Anda akan lihat, mereka memiliki rate komisi berbeda-beda tergantung dari jenis pembayaran yang digunakan. Berdasarkan biaya tersebut kami memutuskan untuk menetapkan komisi 10% sebagai biaya layanan JetForm, yang akan dipakai untuk membayar biaya transaksi dari Midtrans, pengembangan, support dan operasional lainnya.",
         ]}
