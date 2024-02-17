@@ -13,16 +13,17 @@ export interface Props {
 const { title, description, image } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = image
-  ? image
-  : new URL("/opengraph.jpg", Astro.site).toString();
+const resolvedImageWithDomain = new URL(
+  image ? image : "/opengraph.jpg",
+  Astro.site,
+).toString();
 
 const makeTitle = title
-  ? title + " | " + "JetForm"
-  : "JetForm - Solusi pintar menjual produk digital";
+  ? title
+  : "JetForm - Solusi pintar menjual produk digital!";
 const makeDesc = description
-  ? description + " | " + "JetForm"
-  : "JetForm - Solusi pintar menjual produk digital";
+  ? description
+  : "Onlinekan produk Anda dalam hitungan menit dengan JetForm. Menjual lebih banyak, hemat waktu, biaya dan tenaga.";
 ---
 
 <!doctype html>
@@ -30,11 +31,12 @@ const makeDesc = description
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
-
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
       description={makeDesc}
@@ -43,6 +45,10 @@ const makeDesc = description
         creator: "@ekaputra07",
         site: "@ekaputra07",
         card: "summary_large_image",
+        title: makeTitle,
+        description: makeDesc,
+        image: resolvedImageWithDomain,
+        imageAlt: "JetForm Homepage Screenshot",
       }}
       openGraph={{
         basic: {
@@ -50,6 +56,9 @@ const makeDesc = description
           type: "website",
           title: makeTitle,
           image: resolvedImageWithDomain,
+        },
+        optional: {
+          description: makeDesc,
         },
         image: {
           alt: "JetForm Homepage Screenshot",
