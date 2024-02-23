@@ -40,7 +40,11 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg">
+        <a
+          href="/"
+          class="text-lg"
+          id="navbar-logo"
+          data-umami-event="navbar-logo">
           <Picture
             src={logo}
             alt="JetForm logo"
@@ -91,6 +95,8 @@ const menuitems = [
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <Link
             href="https://app.jetform.me?utm_source=dashboard_btn&utm_medium=website"
+            id="navbar-signin-link-m"
+            data-umami-event="navbar-signin-link-m"
             size="md"
             block
             target="_blank"
@@ -104,6 +110,8 @@ const menuitems = [
       <div class="hidden lg:flex items-center gap-4">
         <Link
           href="https://app.jetform.me?utm_source=dashboard_btn&utm_medium=website"
+          id="navbar-signin-link"
+          data-umami-event="navbar-signin-link"
           size="md"
           target="_blank"
           rel="noopener">

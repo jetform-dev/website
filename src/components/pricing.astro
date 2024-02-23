@@ -48,6 +48,8 @@ const { plan } = Astro.props;
     </ul><div class="flex mt-8">
       <Link
         href={plan.button.link || "#"}
+        id="pricing-signup-cta"
+        data-umami-event="pricing-signup-cta"
         block
         class="font-bold text-lg"
         style={plan.popular ? "primary" : "outline"}>
