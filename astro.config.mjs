@@ -5,6 +5,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://0491-180-254-226-223.ngrok-free.app",
+  site: "https://www.jetform.me",
   integrations: [tailwind(), mdx(), sitemap()],
 });
