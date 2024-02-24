@@ -1,8 +1,9 @@
 ---
 // @ts-ignore
+import { Picture } from "astro:assets";
 import { Icon } from "astro-icon";
 
-const features = [
+const benefits = [
   {
     title: "Hemat Waktu & Tenaga",
     description:
@@ -40,6 +41,27 @@ const features = [
     icon: "bx:bxs-check-shield",
   },
 ];
+
+const features = [
+  {
+    title: "Mudah digunakan",
+    description:
+      "Dibangun dari Nol mengutamakan kemudahan pemakaian oleh penjual ataupun pembeli.",
+    icon: "bx:bxs-check-shield",
+  },
+  {
+    title: "Bisa diandalkan",
+    description:
+      "Memastikan produk Anda bisa diakses kapanpun dan dimanapun. Anda bisa bekerja kapanpun, dimanapun.",
+    icon: "bx:bxs-check-shield",
+  },
+  {
+    title: "Bersahabat",
+    description:
+      "Semua kami komunikasikan dengan terbuka, ramah dan bersahabat.",
+    icon: "bx:bxs-check-shield",
+  },
+];
 ---
 
 <div class="mt-16 md:mt-0">
@@ -49,11 +71,53 @@ const features = [
     >
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Sebagai kreator, anda cukup membuat produk yang penuh manfaat. Tidak perlu
-    terjaga 24 jam untuk memastikan toko Anda selalu online dan pesanan sudah
-    diproses. <strong>Itu adalah tugas kami dan kami ahlinya.</strong> Anda bisa
-    fokus pada hal penting lainnya seperti promosi, pemasaran, dan menyempurnakan
-    produk.
+    Tidak perlu terjaga 24 jam untuk memastikan toko Anda selalu online dan
+    memastikan pesanan sudah diproses. <strong
+      >Itu adalah tugas kami dan kami ahlinya.</strong
+    > Anda bisa fokus pada hal penting lainnya seperti promosi, pemasaran, atau mewujudkan
+    ide baru anda menjadi sebuah produk.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    benefits.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<div class="mt-16">
+  <Picture
+    src="/dashboard.jpg"
+    width={1440}
+    height={600}
+    alt="JetForm - Solusi pintar menjual produk digital"
+    loading="lazy"
+    format="avif"
+  />
+  <hr />
+
+  <h2
+    class="mt-6 text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight text-">
+    Simple, <span class="font-bold text-primary-500">yet powerful.</span>
+  </h2>
+  <p class="text-lg mt-4 text-slate-600 text-">
+    Ucapkan selamat tinggal pada sistem yang kompleks dan membingungkan. Anda
+    ingin <strong>up and running dengan cepat!</strong> bukan menghabiskan waktu
+    berjam-jam mempelajari bagaimana cara melakukan ini dan itu. Didukung teknologi
+    yang <strong
+      >sangat bisa diandalkan serta support langsung dari developer yang
+      kompeten di bidangnya</strong
+    >, JetForm tidak akan membiarkan satu order pun terlewatkan oleh anda.
   </p>
 </div>
 
