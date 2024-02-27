@@ -51,7 +51,7 @@ const pricing = [
   <Container>
     <Sectionhead>
       <Fragment slot="title">Harga Layanan</Fragment>
-      <Fragment slot="desc">Simple and Flexible pricing!</Fragment>
+      <Fragment slot="desc">Simple and Flexible pricing! Pilih yang sesuai kebutuhan Anda.</Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-2 gap-10 mx-auto mt-12">
@@ -69,13 +69,17 @@ const pricing = [
 
       <Accordion
         titles={[
+          "Komisi vs Bulanan, mana yang sebaiknya saya pilih?",
+          "Apa bisa pindah dari Pay As You Go ke Per Bulan? Atau sebaliknya?",
           "Apa itu komisi per transaksi?",
           "Apakah komisi bisa berubah setiap saat?",
           "Apa itu Midtrans?",
           "Berapa biaya Midtrans?",
         ]}
         content={[
-          "Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu transaksi. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 5% dari harga produk tersebut, yaitu Rp. 5,000 dan Anda akan mendapatkan Rp. 95,000.",
+          "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak transaksi, maka Pay As You Go adalah pilihan yang tepat karena Anda tidak perlu khawatir tentang biaya bulanan. Namun jika Anda sudah memiliki volume transaksi yang cukup besar, maka paket Per Bulan akan lebih hemat.",
+          "Tentu saja bisa. Namu perlu diingat bahwa jika Anda pindah dari Pay As You Go ke Per Bulan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Per Bulan ke Pay As You Go, maka Anda akan dikenakan komisi per transaksi yang berlaku saat itu.",
+          "Pertama, Pay As You Go adalah istilah lain dari Komisi per transaksi di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu transaksi. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 5% dari harga produk tersebut, yaitu Rp. 5,000 dan Anda akan mendapatkan Rp. 95,000. Namun, perhitungan ini tentu saja tidak berlaku di paket Bulanan.",
           "Kami pasti akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Anda mendaftar maka semakin kecil komisi yang dikenakan.",
           "Midtrans adalah layanan Payment Gateway yang kami pakai untuk menerima pembayaran dari pembeli. Ini memungkinkan kami menerima berbagai jenis opsi pembayaran sehingga bisa menjangkau lebih banyak pembeli. Midtrans adalah perusahaan yang sudah terdaftar di Bank Indonesia dan Kominfo jadi sudah terpercaya. Silahkan kunjungi website Midtrans untuk informasi lebih lanjut: https://midtrans.com",
           "Untuk detail biaya dari Midtrans silahkan Anda kunjungi website mereka di https://midtrans.com/pricing. Seperti yang Anda akan lihat, mereka memiliki rate komisi berbeda-beda tergantung dari jenis pembayaran yang digunakan.",
