@@ -6,11 +6,12 @@ import "@fontsource-variable/inter/index.css";
 
 export interface Props {
   title: string;
+  title_suffix?: string;
   description?: string;
   image?: string;
 }
 
-const { title, description, image } = Astro.props;
+const { title, title_suffix, description, image } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
@@ -21,6 +22,9 @@ const resolvedImageWithDomain = new URL(
 const makeTitle = title
   ? title
   : "JetForm - Solusi pintar menjual produk digital!";
+const makeSuffix = title_suffix ? title_suffix : " | JetForm";
+const makeTitleWithSuffix = `${makeTitle}${makeSuffix}`;
+
 const makeDesc = description
   ? description
   : "Onlinekan produk Anda dalam hitungan menit dengan JetForm. Menjual lebih banyak, hemat waktu, biaya dan tenaga.";
@@ -38,14 +42,14 @@ const makeDesc = description
     <link rel="sitemap" href="/sitemap-index.xml" />
     <meta name="generator" content={Astro.generator} />
     <SEO
-      title={makeTitle}
+      title={makeTitleWithSuffix}
       description={makeDesc}
       canonical={canonicalURL}
       twitter={{
         creator: "@ekaputra07",
         site: "@ekaputra07",
         card: "summary_large_image",
-        title: makeTitle,
+        title: makeTitleWithSuffix,
         description: makeDesc,
         image: resolvedImageWithDomain,
         imageAlt: "JetForm Homepage Screenshot",
@@ -54,7 +58,7 @@ const makeDesc = description
         basic: {
           url: canonicalURL,
           type: "website",
-          title: makeTitle,
+          title: makeTitleWithSuffix,
           image: resolvedImageWithDomain,
         },
         optional: {
@@ -85,16 +89,18 @@ const makeDesc = description
     </style>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/65db3ebb8d261e1b5f653056/1hng6q3bl';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/65db3ebb8d261e1b5f653056/1hng6q3bl";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
       })();
-      </script>
-      <!--End of Tawk.to Script-->
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>

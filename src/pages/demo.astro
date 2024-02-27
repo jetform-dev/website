@@ -1,0 +1,113 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+---
+
+<Layout title="Demo">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Demo</Fragment>
+      <Fragment slot="desc">Jangan percaya sebelum Anda melihatnya.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-medium text-3xl">🧑‍💼 Demo Pembeli</h2>
+      <p class="text-lg text-slate-500">
+        Kami berkomitmen bahwa penjual maupun pembeli harus mendapatkan
+        pengalaman dan kemudahan yang sama menggunakan platform ini.
+      </p>
+      <p class="text-lg text-slate-500">
+        Berikut adalah beberapa link produk Demo yang bisa anda coba untuk
+        merasakan pengalaman sebagai Pembeli di JetForm:
+      </p>
+      <hr />
+      <ul class="text-base leading-relaxed text-slate-500">
+        <li>
+          👉 <strong>Produk Gratis</strong>: <a
+            class="text-primary-600 cursor-pointer"
+            href="https://demo.jetform.me/p/free-product"
+            target="_blank"
+            rel="noopener noreferrer">https://demo.jetform.me/p/free-product</a
+          >
+        </li>
+        <li>
+          👉 <strong>Produk Berbayar</strong>: <a
+            class="text-primary-600 cursor-pointer"
+            href="https://demo.jetform.me/p/paid-product"
+            target="_blank"
+            rel="noopener noreferrer">https://demo.jetform.me/p/paid-product</a
+          >
+        </li>
+        <li>
+          👉 <strong>Produk dengan Varian</strong>: <a
+            class="text-primary-600 cursor-pointer"
+            href="https://demo.jetform.me/p/produk-with-variants"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://demo.jetform.me/p/produk-with-variants</a
+          >
+        </li>
+      </ul>
+      <hr />
+      <p
+        class="text-lg text-yellow-700 border border-2 border-dashed border-yellow-500 bg-yellow-50 p-2 rounded-lg">
+        <strong>Jangan khawatir!</strong> Semua link dan produk diatas adalah <i
+          >produk demo</i
+        >, jadi anda tidak benar-benar melakukan pembelian atau pembayaran
+        nyata.
+      </p>
+
+      <p class="text-lg text-slate-500">
+        <strong>Mensimulasikan pembayaran:</strong><br />
+        Jika Anda ingin mensimulasikan pembayaran misalnya menggunakan Virtual Account
+        atau QRIS, silahkan gunakan tool dari Midtrans yaitu <a
+          class="text-primary-600 cursor-pointer"
+          href="https://simulator.sandbox.midtrans.com/bca/va/index"
+          target="_blank"
+          rel="noopener noreferrer">Midtrans Simulator</a
+        >. Dengan simulator tersebut Anda bisa memasukkan nomor Virtual Account
+        atau URL gambar QR code QRIS yang akan Anda dapatkan dari halaman
+        pembayaran produk.
+      </p>
+      <h3 class="font-medium text-3xl mt-6">👩‍💻 Demo penjual</h3>
+      <p class="text-lg text-slate-500">
+        Anda pastinya ingin menjual dan menjual banyak! maka demo ini wajib
+        dicoba.
+      </p>
+      <p class="text-lg text-slate-500">
+        Anda bisa login ke aplikasi Demo JetForm yang sudah kami siapkan, cukup
+        login menggunakan Email dan Password di bawah ini:
+      </p>
+      <hr />
+      <ul class="text-base leading-relaxed text-slate-500">
+        <li>
+          <strong>Demo URL</strong>: <a
+            href="https://demo.jetform.me/signin"
+            class="text-primary-600 cursor-pointer"
+            target="_blank"
+            rel="noopener noreferrer">https://demo.jetform.me/signin</a
+          >
+        </li>
+        <li>
+          <strong>Email</strong>: <span class="font-medium text-black"
+            >demo@jetform.me</span
+          >
+        </li>
+        <li>
+          <strong>Password</strong>: <span class="font-medium text-black"
+            >jetform-demo-pass!</span
+          >
+        </li>
+      </ul>
+      <hr />
+      <p class="text-lg text-slate-500">
+        Meskipun anda bisa membuat akun, login, atau membuat produk sesuka hati
+        di Demo tersebut, mohon diingat bahwa mereka hanyalah demo, data yang
+        anda masukkan tidak akan disimpan lama dan otomatis dihapus setiap
+        beberapa jam sekali.
+      </p>
+      <p class="text-lg text-slate-500">Selamat mencoba!</p>
+    </div>
+  </Container>
+</Layout>

@@ -19,7 +19,8 @@ const { Content } = await entry.render();
 ---
 
 <Layout
-  title={entry.data.title + " | JetForm Blog"}
+  title={entry.data.title}
+  title_suffix=" | JetForm Blog"
   description={entry.data.snippet}
   image={entry.data.image.src.src}>
   <Container>
