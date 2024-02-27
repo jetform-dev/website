@@ -7,39 +7,43 @@ import Accordion from "@components/ui/accordion.astro";
 
 const pricing = [
   {
-    name: "Komisi per transaksi",
-    price: { monthly: "5%", original: "10%" },
+    name: "Pay As You Go",
+    price: "5% / transaksi",
     popular: true,
     features: [
       "Jumlah produk tidak dibatasi (unlimited)",
       "Volume transaksi tidak dibatasi (unlimited)",
+      "Sudah termasuk biaya transaksi dari Midtrans",
       "Biaya transaksi penarikan dana Rp. 5,000",
       "Support via Email dan WhatsApp",
       ["Statistik produk dan analytics", "segera hadir"],
-      ["Download data produk, pembeli dan order", "segera hadir"],
-      ["Integrasi dengan platform lain melalui Zapier", "segera hadir"],
+      ["Data export", "segera hadir"],
+      ["Integrasi dengan Zapier", "segera hadir"],
     ],
     button: {
       text: "Daftar Sekarang",
-      link: "https://app.jetform.me/signup?utm_source=pricing-signup-cta&utm_medium=website",
+      link: "https://app.jetform.me/signup?utm_source=pricing-payg-cta&utm_medium=website",
     },
   },
-  // {
-  //   name: "Paket Bulanan",
-  //   price: "Custom",
-  //   popular: false,
-  //   features: [
-  //     "Biaya transaksi sesuai rate dari Midtrans",
-  //     "Jumlah produk tidak dibatasi (unlimited)",
-  //     "Volume transaksi per bulan mulai dari 1,000",
-  //     "Biaya transaksi penarikan dana Rp. 5,000",
-  //     "Support via Email dan WhatsApp",
-  //   ],
-  //   button: {
-  //     text: "Hubungi Kami",
-  //     link: "/contact",
-  //   },
-  // },
+  {
+    name: "Per Bulan",
+    price: "Rp. 99rb",
+    popular: false,
+    features: [
+      "Jumlah produk tidak dibatasi (unlimited)",
+      "Volume transaksi per bulan: 1,000",
+      "Biaya per transaksi sesuai rate dari Midtrans",
+      "Biaya transaksi penarikan dana Rp. 5,000",
+      "Support via Email dan WhatsApp",
+      ["Statistik produk dan analytics", "segera hadir"],
+      ["Data export", "segera hadir"],
+      ["Integrasi dengan Zapier", "segera hadir"],
+    ],
+    button: {
+      text: "Daftar Sekarang",
+      link: "https://app.jetform.me/signup?utm_source=pricing-monthly-cta&utm_medium=website",
+    },
+  },
 ];
 ---
 
@@ -47,12 +51,10 @@ const pricing = [
   <Container>
     <Sectionhead>
       <Fragment slot="title">Harga Layanan</Fragment>
-      <Fragment slot="desc">
-        Daftar gratis dan tanpa biaya bulanan. <i>Risk free pricing!</i>
-      </Fragment>
+      <Fragment slot="desc">Simple and Flexible pricing!</Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-2xl mt-12">
+    <div class="grid md:grid-cols-2 gap-10 mx-auto mt-12">
       {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
 
@@ -67,14 +69,16 @@ const pricing = [
 
       <Accordion
         titles={[
-          "Apa maksudnya komisi per transaksi?",
+          "Apa itu komisi per transaksi?",
           "Apakah komisi bisa berubah setiap saat?",
-          "Apa ada opsi paket bulanan?",
+          "Apa itu Midtrans?",
+          "Berapa biaya Midtrans?",
         ]}
         content={[
           "Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu transaksi. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 5% dari harga produk tersebut, yaitu Rp. 5,000 dan Anda akan mendapatkan Rp. 95,000.",
           "Kami pasti akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Anda mendaftar maka semakin kecil komisi yang dikenakan.",
-          "Untuk sementara belum ada. Tetapi kami paham bahwa apabila volume transaksi Anda cukup banyak maka opsi paket bulanan akan lebih hemat buat Anda. Kami menunggu masukan dari pengguna seperti Anda apabila membutuhkan opsi seperti itu. Silahkan hubungi kami apabila anda tertarik dengan opsi paket bulanan.",
+          "Midtrans adalah layanan Payment Gateway yang kami pakai untuk menerima pembayaran dari pembeli. Ini memungkinkan kami menerima berbagai jenis opsi pembayaran sehingga bisa menjangkau lebih banyak pembeli. Midtrans adalah perusahaan yang sudah terdaftar di Bank Indonesia dan Kominfo jadi sudah terpercaya. Silahkan kunjungi website Midtrans untuk informasi lebih lanjut: https://midtrans.com",
+          "Untuk detail biaya dari Midtrans silahkan Anda kunjungi website mereka di https://midtrans.com/pricing. Seperti yang Anda akan lihat, mereka memiliki rate komisi berbeda-beda tergantung dari jenis pembayaran yang digunakan.",
         ]}
       />
     </div>
