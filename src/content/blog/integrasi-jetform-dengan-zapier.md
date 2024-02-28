@@ -1,0 +1,64 @@
+---
+draft: false
+title: "Semakin canggih! Integrasi JetForm dengan Zapier"
+snippet: "Jadikan JetForm lebih powerful melalui integrasi dengan aplikasi lain menggunakan Zapier."
+publishDate: "2024-02-28 11:30"
+image: {
+  src: "./integrations.jpg",
+  alt: "Semakin canggih! Integrasi JetForm dengan Zapier"
+}
+category: "fitur"
+author: "Eka Putra"
+tags: [jetform, fitur]
+---
+
+**Key takeaways:**
+
+Buat Anda yang tidak tertarik dengan latar belakang adanya integrasi ini, maka ini yang perlu Anda ketahui.
+
+- **Kini Anda dapat mengintegrasikan JetForm dengan aplikasi favorit Anda** seperti Google Sheets, Gmail, WhatsApp, Telegram, dan masih banyak lagi.
+- **Integrasi ini memanfaatkan layanan dari [Zapier](https://zapier.com/)**, yaitu layanan integrasi ribuan aplikasi dan platform pihak ketiga.
+- Dari pihak JetForm **Anda bisa menggunakan integrasi ini secara Gratis**, begitu juga dengan Zapier. Namun Zapier juga punya pilihan berbayar buat Anda yang perlu integrasi lebih khusus.
+- Apabila Anda perlu bantuan dengan integrasi JetForm + Zapier ini, silahkan hubungi saya via [halaman kontak](/kontak).
+---
+
+Sekarang, mari saya ceritakan sedikit _behind-the-scene_...
+
+JetForm memang aplikasi sederhana yang jauh dari kompleksitas aplikasi-aplikasi lain yang dibuat oleh perusahaan besar. Saya merancang dan membangun JetForm dari Nol dengan selalu mengingat bahwa **saya membuatnya karena memang saya memerlukannya**.
+
+Artinya semua fitur yang ada saat ini karena memang saya perlu, bukan hanya karena fitur-fitur tersebut keren atau membuat sebuah produk terlihat hebat.
+
+Salah satu fitur yang saya perlukan adalah mengintegrasikan JetForm dengan software email marketing seperti MailChimp begitu juga dengan software komunikasi seperti WhatsApp atau Telegram.
+
+### Contoh kasus
+
+Setiap pembeli yang membeli e-book saya, akan didaftarkan sebagai subscriber ke daftar email saya di MailChimp. Di kemudian hari, apabila saya meluncurkan produk baru atau punya penawaran khusus, maka saya tinggal mengirimkan email pengumuman ke daftar tersebut.
+
+Keperluan lainnya, saya ingin ketika produk saya ada yang beli, maka saya akan mendapatkan notifikasi via WhatsApp atau Telegram, tidak hanya via Email.
+
+### Masalah
+
+Namun, mengintegrasikan JetForm dengan semua aplikasi-aplikasi berbeda tersebut akan memakan banyak waktu dan tenaga. Selain itu apabila semua diintegrasikan langsung di dalam sistem JetForm akan membuatnya menjadi software yang kompleks bahkan berpotensi menimbulkan banyak bug.
+
+Belum lagi menjaga semua integrasi kompatibel dengan cepatnya perkembangan layanan lain tersebut, mau tidak mau saya harus up-to-date, mengikuti dan mengecek ulang secara berkala untuk memastikan semua berjalan dengan lancar. Sangat tidak efisien!
+
+### Solusi
+
+Apakah anda pernah dengar kalimat **"Do not reinvent the wheel"**? atau **"Kerja smart, bukan kerja keras"**?
+
+Itulah yang hari ini saya praktekkan, daripada menghabiskan banyak waktu mengintegrasikan semua secara manual, saya memutuskan untuk mengintegrasikan JetForm hanya dengan satu aplikasi, yaitu **Zapier**.
+
+Buat Anda yang belum tahu apa itu Zapier, **Zapier adahal sebuah platform yang bisa digunakan untuk mengintegrasikan ribuan aplikasi atau platform berbeda dengan sangat mudah**. Tanpa koding, tinggal click-click dan sudah terintegrasi. Keren bukan?
+
+Saya hanya perlu mengintegrasikan dengan satu aplikasi yaitu Zapier, maka secara tidak langsung **JetForm bisa dihubungkan dengan ribuan (5000 lebih) aplikasi pihak ketiga**. Coba bayangkan kalau saya harus mengintegrasikan dengan mereka semua secara manual.
+
+Hebatnya lagi, semua selesai saya kerjakan dalam beberapa jam saja 😀 Betul! hanya dalam beberapa jam tiba-tiba JetForm bisa nyambung ke banyak aplikasi. Itu baru kerja smart!
+
+### JetForm + Zapier = 🚀
+
+Fitur integrasi ini sudah bisa anda gunakan dan dicoba, saya memang belum sempat membuat dokumentasi yang lengkap tentang bagaimana menggunakannya. Namun, apabila Anda memerlukannya segera, jangan sungkan-sungkan untuk [menghubungi saya](/kontak) dan pasti saya bantu.
+
+Kesimpulannya, dengan Zapier saya bisa menjaga **JetForm tetap sederhana dan mudah digunakan**, namun apabila Anda perlu integrasi tambahan maka ada Zapier yang bisa kita manfaatkan.
+
+Sekian dulu dari saya, selamat mencoba dan semoga bermanfaat!
+
