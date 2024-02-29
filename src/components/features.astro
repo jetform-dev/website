@@ -56,9 +56,9 @@ const features = [
     icon: "bx:bxs-check-shield",
   },
   {
-    title: "Ribuan integrasi",
+    title: "Ekstensibel",
     description:
-      "Integrasikan dengan ribuan aplikasi pihak ketiga seperti Google Sheets, Mailchimp, dan lainnya menggunakan Zapier.",
+      "Dengan dukungan API dan Zapier, Anda bisa membuat integrasi khusus sesuai kebutuhan.",
     icon: "bx:bxs-check-shield",
   },
 ];
@@ -67,19 +67,18 @@ const features = [
 <div class="mt-16 md:mt-0">
   <h2 class="text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight">
     Menjual lebih banyak, <span class="font-bold text-primary-500"
-      >kerja lebih sedikit.</span
+      ><i>capek</i> lebih sedikit.</span
     >
   </h2>
   <p class="text-lg mt-4 text-slate-600">
     Tidak perlu terjaga 24 jam untuk memastikan toko Anda selalu online dan
-    memastikan pesanan sudah diproses. <strong
-      >Itu adalah tugas kami dan kami ahlinya.</strong
+    memastikan pesanan sudah diproses. <strong>Itu adalah tugas JetForm.</strong
     > Anda bisa fokus pada hal penting lainnya seperti promosi, pemasaran, atau mewujudkan
     ide baru anda menjadi sebuah produk.
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-4 md:gap-16">
   {
     benefits.map((item) => (
       <div class="flex gap-4 items-start">
@@ -110,18 +109,16 @@ const features = [
     class="mt-6 text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight text-">
     Simple, <span class="font-bold text-primary-500">yet powerful.</span>
   </h2>
-  <p class="text-lg mt-4 text-slate-600 text-">
+  <p class="text-lg mt-4 text-slate-600">
     Ucapkan selamat tinggal pada sistem yang kompleks dan membingungkan. Anda
-    ingin <strong>up and running dengan cepat!</strong> bukan menghabiskan waktu
-    berjam-jam mempelajari bagaimana cara melakukan ini dan itu. Didukung teknologi
-    yang <strong
-      >sangat bisa diandalkan serta support langsung dari developer yang
-      kompeten di bidangnya</strong
+    ingin <strong>up and running dengan cepat!</strong>. Didukung teknologi yang <strong
+      >sangat bisa diandalkan serta dukungan langsung dari developer yang
+      berpengalaman</strong
     >, JetForm tidak akan membiarkan satu order pun terlewatkan oleh anda.
   </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-4 md:gap-16">
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
@@ -135,4 +132,45 @@ const features = [
       </div>
     ))
   }
+</div>
+
+<div class="mt-16">
+  <Picture
+    src="/integrations.png"
+    width={1440}
+    height={600}
+    alt="JetForm - Solusi pintar menjual produk digital"
+    loading="lazy"
+    format="avif"
+  />
+  <h2
+    class="mt-6 text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight text-">
+    Kaya integrasi, <span class="font-bold text-primary-500"
+      >developer friendly.</span
+    >
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    JetForm mungkin sederhana, tetapi jangan salah. Kami membuka JetForm untuk
+    diintegrasikan dengan aplikasi atau platform favorit Anda. Tidak hanya satu
+    atau dua, melainkan dengan ribuan aplikasi pihak ketiga dengan menggunakan
+    layanan integrasi dari <a
+      href="https://zapier.com/"
+      target="_blank"
+      class="text-primary-500"
+      rel="nofollow noreferrer">Zapier</a
+    > (platform integrasi kelas dunia).
+  </p>
+
+  <p class="text-lg mt-4 text-slate-600">
+    <strong>Apakah Anda seorang developer?</strong>
+    <i>we got you covered!</i> JetForm menyediakan API yang bisa Anda gunakan untuk
+    membuat integrasi khusus sesuai keperluan Anda. Selain itu, <strong
+      >JetForm bangga dengan menjadi proyek yang <a
+        href="https://github.com/jetform-dev"
+        class="text-primary-500"
+        target="_blank">100% Open Source</a
+      ></strong
+    >, Anda bisa melihat kode sumbernya dan berkontribusi untuk membuat JetForm
+    menjadi lebih baik.
+  </p>
 </div>
