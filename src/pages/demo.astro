@@ -8,13 +8,15 @@ import Sectionhead from "@components/sectionhead.astro";
   <Container>
     <Sectionhead>
       <Fragment slot="title">Demo</Fragment>
-      <Fragment slot="desc">Jangan percaya sebelum Anda melihatnya sendiri.</Fragment>
+      <Fragment slot="desc">
+        Jangan percaya sebelum Anda melihatnya sendiri.
+      </Fragment>
     </Sectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <h2 class="font-medium text-3xl">🧑‍💼 Demo Pembeli</h2>
       <p class="text-lg text-slate-500">
-        Kami berkomitmen bahwa penjual maupun pembeli harus mendapatkan
+        JetForm berkomitmen bahwa penjual maupun pembeli harus merasakan
         pengalaman dan kemudahan yang sama menggunakan platform ini.
       </p>
       <p class="text-lg text-slate-500">
@@ -60,15 +62,13 @@ import Sectionhead from "@components/sectionhead.astro";
 
       <p class="text-lg text-slate-500">
         <strong>Mensimulasikan pembayaran:</strong><br />
-        Jika Anda ingin mensimulasikan pembayaran misalnya menggunakan Virtual Account
-        atau QRIS, silahkan gunakan tool dari Midtrans yaitu <a
+        Jika Anda ingin mensimulasikan pembayaran silahkan gunakan <a
           class="text-primary-600 cursor-pointer"
-          href="https://simulator.sandbox.midtrans.com/bca/va/index"
+          href="https://simulator.sandbox.midtrans.com/qris/index"
           target="_blank"
-          rel="noopener noreferrer">Midtrans Simulator</a
-        >. Dengan simulator tersebut Anda bisa memasukkan nomor Virtual Account
-        atau URL gambar QR code QRIS yang akan Anda dapatkan dari halaman
-        pembayaran produk.
+          rel="noopener noreferrer">QRIS Simulator dari Midtrans</a
+        >. Masukkan URL gambar code QRIS yang Anda dapatkan dari halaman
+        pembayaran.
       </p>
       <h3 class="font-medium text-3xl mt-6">👩‍💻 Demo penjual</h3>
       <p class="text-lg text-slate-500">
