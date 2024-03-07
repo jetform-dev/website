@@ -1,0 +1,51 @@
+---
+export const prerender = false;
+import { list } from "services/products";
+const app_base_url = import.meta.env.APP_BASE_URL;
+const limit = import.meta.env.LATEST_PRODUCTS_COUNT || 3;
+const products = await list(1, limit);
+---
+
+<div class="mt-16">
+  <hr />
+  <div class="flex">
+    <h3 class="text-xl text-slate-600 font-semibold tracking-tight mb-8 mt-4">
+      Produk Terbaru
+    </h3>
+    <!-- <a href="/discover" class="ml-auto text-base text-primary-500 mt-4"
+      >Lihat Semua <span aria-hidden="true">→</span></a
+    > -->
+  </div>
+  <!-- text - end -->
+
+  <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+    {
+      products.data.map((product) => (
+        <a
+          href={
+            app_base_url +
+            "/p/" +
+            product.slug +
+            "?utm_source=landing-latest-products&utm_medium=website"
+          }
+          class="flex flex-col"
+          target="_blank">
+          <img
+            src={product.cover.standard_url}
+            loading="lazy"
+            alt="Photo by Fakurian Design"
+            class="h-40 w-full object-cover object-center rounded-md"
+          />
+          <div class="relative flex flex-col mt-2">
+            <span class="text-slate-400 font-medium">
+              {product.price_display}
+            </span>
+            <span class="text-lg font-medium text-slate-600 lg:text-base">
+              {product.name}
+            </span>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</div>
