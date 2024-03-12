@@ -46,8 +46,8 @@ const makeDesc = description
       description={makeDesc}
       canonical={canonicalURL}
       twitter={{
-        creator: "@ekaputra07",
-        site: "@ekaputra07",
+        creator: "@jetformapp",
+        site: "@jetformapp",
         card: "summary_large_image",
         title: makeTitleWithSuffix,
         description: makeDesc,
@@ -74,8 +74,8 @@ const makeDesc = description
       src="https://analytics.us.umami.is/script.js"
       data-website-id="ed597fe6-117f-49c6-98eb-b76fc8c8e96b"></script>
   </head>
-  <body>
-    <div class="mx-auto max-w-5xl">
+  <body class="bg-white bg-auto bg-no-repeat bg-top" style="background-image: url('/rainbow-bg.jpg')">
+    <div class="mx-auto max-w-6xl min-h-full shadow-lg bg-white">
       <Navbar />
       <slot />
       <Footer />
@@ -87,20 +87,5 @@ const makeDesc = description
         content-visibility: auto;
       }
     </style>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/65db3ebb8d261e1b5f653056/1hng6q3bl";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <!--End of Tawk.to Script-->
   </body>
 </html>

@@ -15,9 +15,9 @@ const pricing = [
       "Jumlah penjualan tidak dibatasi (unlimited)",
       "Integrasi dengan aplikasi lain via Zapier",
       "Terima pembayaran instan dengan QRIS (*)",
+      "Statistik produk dan analytics",
       "Penarikan dana tanpa biaya",
       "Support via Email, WhatsApp dan Live Chat",
-      ["Statistik produk dan analytics", "segera hadir"],
       ["Data export", "segera hadir"],
     ],
     button: {
@@ -34,9 +34,9 @@ const pricing = [
       "Jumlah penjualan tidak dibatasi (unlimited)",
       "Integrasi dengan aplikasi lain via Zapier",
       "Terima pembayaran instan dengan QRIS (*)",
+      "Statistik produk dan analytics",
       "Penarikan dana tanpa biaya",
       "Support via Email, WhatsApp dan Live Chat",
-      ["Statistik produk dan analytics", "segera hadir"],
       ["Data export", "segera hadir"],
     ],
     button: {
@@ -54,38 +54,40 @@ const pricing = [
       <Fragment slot="desc">Sederhana dan tanpa basa-basi.</Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-2 gap-10 mx-auto mt-12">
-      {pricing.map((item) => <PricingCard plan={item} />)}
-    </div>
-
-    <p class="text-center text-sm text-slate-500 mt-8">
-      (*) Setiap transaksi dikenakan biaya QRIS 0,7% oleh Payment Gateway yang
-      kami gunakan.
-    </p>
-
-    <div class="mt-16 py-4">
-      <div class="text-center mb-8">
-        <h2 class="text-3xl font-bold text-slate-700">F.A.Q Harga</h2>
-        <p class="text-xl mt-1 text-slate-500">
-          Berikut beberapa pertanyaan yang sering diajukan mengenai harga
-          layanan kami.
-        </p>
+    <div class="p-8 md:px-20">
+      <div class="grid md:grid-cols-2 gap-10 mx-auto">
+        {pricing.map((item) => <PricingCard plan={item} />)}
       </div>
 
-      <Accordion
-        titles={[
-          "Komisi vs Bulanan, mana yang sebaiknya saya pilih?",
-          "Apa bisa pindah dari Komisi ke Bulanan? Atau sebaliknya?",
-          "Apa itu komisi per transaksi?",
-          "Apakah komisi bisa berubah setiap saat?",
-        ]}
-        content={[
-          "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak penjualan, maka Komisi adalah pilihan yang tepat karena Anda tidak perlu khawatir dengan biaya bulanan. Namun jika Anda sudah memiliki volume penjualan yang cukup besar, maka harga Bulanan akan lebih hemat.",
-          "Tentu saja bisa. Namun perlu diingat bahwa jika Anda pindah dari Komisi ke Bulanan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Bulanan ke Komisi, maka Anda akan dikenakan komisi per penjualan yang berlaku saat itu.",
-          "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu penjualan. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 5% dari harga produk tersebut, yaitu Rp. 5,000 dan Anda akan mendapatkan Rp. 95,000. Namun, perhitungan ini tentu saja tidak berlaku di paket Bulanan.",
-          "Besar kemungkinannya kami akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Anda mendaftar maka semakin kecil komisi yang dikenakan.",
-        ]}
-      />
+      <p class="text-center text-sm text-slate-500 mt-8">
+        (*) Setiap transaksi dikenakan biaya QRIS 0,7% oleh Payment Gateway yang
+        kami gunakan.
+      </p>
+
+      <div class="mt-16 py-4">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-slate-700">F.A.Q Harga</h2>
+          <p class="text-xl mt-1 text-slate-500">
+            Berikut beberapa pertanyaan yang sering diajukan mengenai harga
+            layanan kami.
+          </p>
+        </div>
+
+        <Accordion
+          titles={[
+            "Komisi vs Bulanan, mana yang sebaiknya saya pilih?",
+            "Apa bisa pindah dari Komisi ke Bulanan? Atau sebaliknya?",
+            "Apa itu komisi per transaksi?",
+            "Apakah komisi bisa berubah setiap saat?",
+          ]}
+          content={[
+            "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak penjualan, maka Komisi adalah pilihan yang tepat karena Anda tidak perlu khawatir dengan biaya bulanan. Namun jika Anda sudah memiliki volume penjualan yang cukup besar, maka harga Bulanan akan lebih hemat.",
+            "Tentu saja bisa. Namun perlu diingat bahwa jika Anda pindah dari Komisi ke Bulanan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Bulanan ke Komisi, maka Anda akan dikenakan komisi per penjualan yang berlaku saat itu.",
+            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu penjualan. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 5% dari harga produk tersebut, yaitu Rp. 5,000 dan Anda akan mendapatkan Rp. 95,000. Namun, perhitungan ini tentu saja tidak berlaku di paket Bulanan.",
+            "Besar kemungkinannya kami akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Anda mendaftar maka semakin kecil komisi yang dikenakan.",
+          ]}
+        />
+      </div>
     </div>
   </Container>
 </Layout>

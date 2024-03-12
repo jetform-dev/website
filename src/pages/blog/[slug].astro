@@ -24,12 +24,12 @@ const { Content } = await entry.render();
   description={entry.data.snippet}
   image={entry.data.image.src.src}>
   <Container>
-    <div class="mx-auto max-w-3xl mt-14">
+    <div class="p-8 md:px-40 md:pb-20">
       <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
         {entry.data.category}
       </span>
       <h1
-        class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 leading-snug">
+        class="text-3xl lg:text-4xl font-bold lg:tracking-tight mt-1 leading-snug">
         {entry.data.title}
       </h1>
       <div class="flex gap-2 mt-3 items-center flex-wrap md:flex-nowrap">
@@ -51,25 +51,27 @@ const { Content } = await entry.render();
           }
         </div>
       </div>
-    </div>
+      <div class="py-8">
+        <Picture
+          src={entry.data.image.src}
+          alt={entry.data.image.alt}
+          widths={[600, 1080]}
+          sizes="(max-width: 1080px) 100vw, 1080px"
+          loading="eager"
+          format="avif"
+        />
+      </div>
 
-    <div class="mx-auto prose prose-lg mt-6 max-w-3xl">
-      <Picture
-        src={entry.data.image.src}
-        alt={entry.data.image.alt}
-        widths={[600, 1080]}
-        sizes="(max-width: 1080px) 100vw, 1080px"
-        loading="eager"
-        format="avif"
-      />
-      <Content />
-    </div>
-    <div class="text-center mt-8">
-      <a
-        href="/blog"
-        class="bg-gray-100 px-5 py-3 rounded-md hover:bg-gray-200 transition"
-        >← Kembali</a
-      >
+      <div class="prose prose-md">
+        <Content />
+      </div>
+      <div class="text-center mt-8">
+        <a
+          href="/blog"
+          class="bg-gray-100 px-5 py-3 rounded-md hover:bg-gray-200 transition"
+          >← Kembali</a
+        >
+      </div>
     </div>
   </Container>
 </Layout>

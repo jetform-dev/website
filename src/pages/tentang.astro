@@ -20,48 +20,52 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       </Fragment>
     </Sectionhead>
 
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl">
+    <div class="flex flex-col gap-3 mx-auto p-8 md:px-20">
+      <h2 class="font-bold text-xl">
         Semua berawal dari <i>passion</i>.
       </h2>
-      <p class="text-lg text-slate-500">
+      <p class="text-base text-slate-600">
         Rupiah pertama yang saya hasilkan dari Internet adalah dari menjual
         sebuah plugin WordPress sederhana pada tahun 2009-2010. Plugin yang
         sangat sederhana namun bisa terjual seharga Rp. 149,000 per buah. Saya
         senang sekaligus heran, bagaimana bisa sebuah produk digital dari
         seseorang yang baru belajar coding bisa dihargai sedemikian mahalnya.
       </p>
-      <p class="text-lg text-slate-500">
+      <p class="text-base text-slate-600">
         Belasan tahun kemudian, ternyata saya masih berkecimpung di bidang yang
         sama yaitu dunia IT dan internet menjadi seorang software developer.
         Mendapatkan kesempatan untuk bekerja di negeri seberang, belajar banyak
         hal baru, dan bahkan digaji tinggi.
       </p>
-      <p class="text-lg text-slate-500">
+      <p class="text-base text-slate-600">
         <strong>Tetapi</strong>, belakangan saya sadari bahwa menjadi developer
-        hebat dan bergaji tinggi bukanlah tujuan akhir yang ingin saya capai.
-        Saya rindu masa-masa ketika program sederhana buatan saya membantu
-        banyak orang sampai mereka rela membayarnya. Saya rindu ketika pembeli
+        hebat bergaji tinggi bukanlah tujuan akhir yang ingin saya capai. Saya
+        rindu masa-masa ketika program sederhana buatan saya membantu banyak
+        orang sampai mereka rela membayarnya. Saya rindu ketika pembeli
         memberikan saya masukan dan saya bisa langsung memperbaikinya.
         <strong
           >Saya rindu menjadi <i>problem solver</i> yang menghasilkan solusi atas
-          permasalahan di sekitar saya yang nyata</strong
+          permasalahan nyata di sekitar saya</strong
         >.
       </p>
-      <h3 class="font-bold text-3xl">Problem + Skill + Passion = JetForm 🚀</h3>
-      <p class="text-lg text-slate-500">
+      <h3 class="font-bold text-xl">Problem + Skill + Passion = JetForm 🚀</h3>
+      <p class="text-base text-slate-600">
         Dan beberapa waktu yang lalu saya sempat merilis sebuah e-book mengenai
-        pengalaman saya menjadi programmer otodidak dari nol sampai berhasil.
-        Respons yang saya terima luar biasa, namun dalam proses distribusinya
-        (penjualannya) saya rasa ada yang kurang yang sekaligus memberikan saya
-        sebuah ide untuk memperbaikinya.
+        pengalaman saya menjadi programmer otodidak dari nol sampai berhasil
+        (dapatkan e-booknya <a
+          href="https://app.jetform.me/p/zero-to-programmer-ebook"
+          target="_blank"
+          class="text-primary-500">disini</a
+        >). Respons yang saya terima luar biasa, namun dalam proses
+        distribusinya (penjualannya) saya merasa ada yang kurang yang sekaligus
+        memberikan saya sebuah ide untuk memperbaikinya.
       </p>
-      <p class="text-lg text-slate-500">
+      <p class="text-base text-slate-600">
         Masalahnya adalah tidak ada satu platform pun yang bekerja sesuai dengan
         yang saya inginkan dan butuhkan. Mereka selalu jatuh pada kategori:
       </p>
       <hr />
-      <ul class="text-sm leading-relaxed text-slate-500">
+      <ul class="text-sm leading-relaxed text-slate-600">
         <li>
           ⚠️ <strong>Terlalu kompleks</strong>, saya hanya ingin menjual e-book.
           90% fitur lain tidak saya pakai.
@@ -81,17 +85,18 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         </li>
       </ul>
       <hr />
-      <p class="text-lg text-slate-500">
+      <p class="text-base text-slate-600">
         Saya tidak mengatakan mereka buruk, hanya saja tidak sesuai dengan apa
         yang saya butuhkan. Akhirnya saya memutuskan untuk membuat JetForm.
         Sebuah platform yang dirancang dan dibangun khusus sesuai dengan
-        kebutuhan Anda para penjual produk digital. Sebuah produk yang
-        menggabungkan antara passion jualan dan skill teknis, yang saya harapkan
-        bisa membantu Anda menjual lebih banyak serta hemat waktu dan biaya.
+        kebutuhan saya dan kamu para penjual produk digital, semoga bisa
+        membantu kamu menjual lebih banyak serta hemat waktu dan biaya.
       </p>
-      <p class="text-lg text-slate-500">Selamat menggunakan JetForm! Salam dari saya, Eka.</p>
+      <p class="text-base text-slate-600">
+        Selamat menggunakan JetForm! Salam dari saya, Eka.
+      </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-3 gap-10 mx-auto p-8">
       {
         publishedTeamMembers.map((teamMemberEntry, index) => (
           <div class="group col-start-2">
@@ -107,10 +112,10 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             </div>
 
             <div class="mt-4 text-center">
-              <h2 class="text-lg text-slate-800">
+              <h2 class="text-base text-slate-800">
                 {teamMemberEntry.data.name}
               </h2>
-              <h3 class="text-sm text-slate-500">
+              <h3 class="text-sm text-slate-600">
                 {teamMemberEntry.data.title}
               </h3>
             </div>

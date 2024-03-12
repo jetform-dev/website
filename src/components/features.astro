@@ -5,96 +5,121 @@ import { Icon } from "astro-icon";
 
 const benefits = [
   {
-    title: "Hemat Waktu & Tenaga",
+    title: "Hemat waktu & tenaga",
     description:
-      "Anda fokus memasarkan produk dan mendatangkan trafik. Lebih banyak waktu buat keluarga.",
-    icon: "bx:bxs-check-shield",
+      "Fokus pada produk dan mencari pembeli! Kami handle pesanan, pembayaran dan pengiriman.",
+    icon: "bx:bxs-check-circle",
   },
   {
-    title: "Harga Transparan",
+    title: "Bebas risiko",
     description:
-      "Pilih paket harga sesuai kebutuhan. Tidak ada biaya tersembunyi.",
-    icon: "bx:bxs-check-shield",
+      "Bereksperimen sepuasnya, tanpa takut rugi. Dengan sistem komisi, kamu bisa langsung mulai tanpa biaya bulanan.",
+    icon: "bx:bxs-check-circle",
   },
   {
-    title: "Anti Ribet",
+    title: "Buat siapa saja",
     description:
-      "Upload produk dan anda langsung jualan. Tidak perlu memikirkan biaya maintenance, server, dan lainnya.",
-    icon: "bx:bxs-check-shield",
-  },
-  {
-    title: "Pembeli Happy!",
-    description:
-      "Pembeli otomatis mendapatkan produk begitu pembayaran berhasil. Goodbye proses manual!",
-    icon: "bx:bxs-check-shield",
-  },
-  {
-    title: "Spesialis Produk Digital",
-    description:
-      "Cocok untuk menjual produk seperti e-book, software, video, dan lainnya.",
-    icon: "bx:bxs-check-shield",
-  },
-  {
-    title: "Pembayaran Instan",
-    description:
-      "Pembeli membayar dengan mudah dan cepat melalui semua aplikasi yang mendukung QRIS.",
-    icon: "bx:bxs-check-shield",
+      "Kamu penjual pemula? atau sudah berpengalaman? JetForm cocok untuk semua pengalaman.",
+    icon: "bx:bxs-check-circle",
   },
 ];
 
 const features = [
   {
-    title: "Simpel, Intuitif",
+    title: "Super Simple",
     description:
-      "Dibangun dari Nol mengutamakan kemudahan pemakaian oleh penjual ataupun pembeli.",
-    icon: "bx:bxs-check-shield",
+      "Cukup sekali lihat, kamu akan langsung paham bagaimana cara menggunakannya.",
+    icon: "bx:bxs-check-circle",
   },
   {
-    title: "Bisa diandalkan",
+    title: "Super Power",
     description:
-      "Memastikan produk Anda bisa diakses kapanpun dan dimanapun. Anda bisa bekerja kapanpun, dimanapun.",
-    icon: "bx:bxs-check-shield",
+      "Menjual produk dengan berbagai varian? dashboard performa produk? Yes, kami punya!",
+    icon: "bx:bxs-check-circle",
   },
   {
-    title: "Ekstensibel",
+    title: "Super Flexible",
     description:
-      "Dengan dukungan API dan Zapier, Anda bisa membuat integrasi khusus sesuai kebutuhan.",
-    icon: "bx:bxs-check-shield",
+      "Integrasikan JetForm dengan aplikasi favoritmu, atau gunakan API untuk membuat integrasi khusus.",
+    icon: "bx:bxs-check-circle",
+  },
+];
+
+const categories = [
+  {
+    title: "E-book",
+    description:
+      "Bungkus pengetahuanmu dalam bentuk e-book. Kami yakin banyak yang ingin belajar dari kamu.",
+    icon: "bx:bxs-check-circle",
+  },
+  {
+    title: "Desain",
+    description:
+      "Dapatkan penghasilan dari hobi desainmu. Desain grafis, web, template Canva, Figma, dll.",
+    icon: "bx:bxs-check-circle",
+  },
+  {
+    title: "Kode Sumber",
+    description:
+      "Bagikan kode-kode kerenmu, atau buatkan plugin, tema, atau template untuk platform favoritmu.",
+    icon: "bx:bxs-check-circle",
+  },
+  {
+    title: "Photography",
+    description:
+      "Jadikan hobi fotografi sebagai sumber penghasilan. Jual foto, preset, atau template Lightroom.",
+    icon: "bx:bxs-check-circle",
+  },
+  {
+    title: "Audio",
+    description:
+      "Jual musik, sound effect, atau podcast. Siapa tahu karya kamu bisa menjadi hits!",
+    icon: "bx:bxs-check-circle",
+  },
+  {
+    title: "Video",
+    description:
+      "Jual video tutorial, stock footage, atau template video. Banyak yang butuh karya kamu!",
+    icon: "bx:bxs-check-circle",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight">
-    Menjual lebih banyak, <span class="font-bold text-primary-500"
-      ><i>capek</i> lebih sedikit.</span
-    >
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Tidak perlu terjaga 24 jam untuk memastikan toko Anda selalu online dan
-    memastikan pesanan sudah diproses. <strong>Itu adalah tugas JetForm.</strong
-    > Anda bisa fokus pada hal penting lainnya seperti promosi, pemasaran, atau mewujudkan
-    ide baru anda menjadi sebuah produk.
-  </p>
+<div class="p-8 md:px-20 md:py-20">
+  <div>
+    <h2
+      class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+      Online dalam hitungan <span class="font-bold text-primary-500"
+        >Menit<i>!</i></span
+      >
+    </h2>
+    <p class="text-lg mt-4 text-slate-600 text-center">
+      Sudah punya produk? mulai jual hari ini. Jangan habiskan berhari-hari atau
+      minggu membuat website dari Nol, kamu perlu <i>go-to-market</i> dengan cepat!
+      Kamu ingin tahu apakah produkmu laku atau tidak secepatnya.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
+    {
+      benefits.map((item) => (
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-white" name={item.icon} />
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-4 md:gap-16">
-  {
-    benefits.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
-</div>
-
-<div class="mt-16">
+<div class="px-20">
   <Picture
     src="/dashboard.jpg"
     width={1440}
@@ -103,74 +128,61 @@ const features = [
     loading="lazy"
     format="avif"
   />
-  <hr />
-
-  <h2
-    class="mt-6 text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight text-">
-    Simple, <span class="font-bold text-primary-500">yet powerful.</span>
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Ucapkan selamat tinggal pada sistem yang kompleks dan membingungkan. Anda
-    ingin <strong>up and running dengan cepat!</strong>. Didukung teknologi yang <strong
-      >sangat bisa diandalkan serta dukungan langsung dari developer yang
-      berpengalaman</strong
-    >, JetForm tidak akan membiarkan satu order pun terlewatkan oleh anda.
-  </p>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-4 md:gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+<div class="p-8 md:px-20 md:py-20 bg-primary-50 border-y">
+  <div>
+    <h2
+      class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+      Simple, <span class="font-bold text-primary-500">yet powerful.</span>
+    </h2>
+    <p class="text-lg mt-4 text-slate-600 text-center">
+      Kamu ingin menjual banyak dan untung berlimpah, bukan pusing dengan cara
+      menggunakan aplikasi yang kompleks. Kami fokus pada kamu penjual produk
+      digital, hanya menyediakan fitur yang kamu butuhkan. No more, no less!
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
+    {
+      features.map((item) => (
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-white" name={item.icon} />
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>
+            <p class="text-slate-600 mt-2 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </div>
 
-<div class="mt-16">
-  <Picture
-    src="/integrations.png"
-    width={1440}
-    height={600}
-    alt="JetForm - Solusi pintar menjual produk digital"
-    loading="lazy"
-    format="avif"
-  />
+<div class="p-8 md:px-20 md:py-20">
   <h2
-    class="mt-6 text-4xl lg:text-5xl text-slate-700 font-bold lg:tracking-tight text-">
-    Kaya integrasi, <span class="font-bold text-primary-500"
-      >developer friendly.</span
-    >
+    class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+    Masih bingung <span class="font-bold text-primary-500">mau jual apa?</span>
   </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    JetForm mungkin sederhana, tetapi jangan salah. Kami membuka JetForm untuk
-    diintegrasikan dengan aplikasi atau platform favorit Anda. Tidak hanya satu
-    atau dua, melainkan dengan ribuan aplikasi pihak ketiga dengan menggunakan
-    layanan integrasi dari <a
-      href="https://zapier.com/"
-      target="_blank"
-      class="text-primary-500"
-      rel="nofollow noreferrer">Zapier</a
-    > (platform integrasi kelas dunia).
+  <p class="text-lg mt-4 text-slate-600 text-center">
+    Jangan khawatir, memulai bisnis memang kadang membingungkan 😜<br />Berikut
+    adalah beberapa jenis produk yang kamu bisa jual dengan JetForm.
   </p>
-
-  <p class="text-lg mt-4 text-slate-600">
-    <strong>Apakah Anda seorang developer?</strong>
-    <i>we got you covered!</i> JetForm menyediakan API yang bisa Anda gunakan untuk
-    membuat integrasi khusus sesuai keperluan Anda. Selain itu, <strong
-      >JetForm bangga dengan menjadi proyek yang <a
-        href="https://github.com/jetform-dev"
-        class="text-primary-500"
-        target="_blank">100% Open Source</a
-      ></strong
-    >, Anda bisa melihat kode sumbernya dan berkontribusi untuk membuat JetForm
-    menjadi lebih baik.
-  </p>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
+    {
+      categories.map((item) => (
+        <div class="flex gap-4 items-start border rounded-md shadow-md text-center p-6 bg-slate-50">
+          <div>
+            <h3 class="font-bold text-lg text-slate-700">{item.title}</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+        </div>
+      ))
+    }
+  </div>
 </div>
