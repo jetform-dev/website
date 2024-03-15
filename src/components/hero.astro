@@ -1,11 +1,11 @@
 ---
 import { Picture } from "astro:assets";
 import Link from "@components/ui/link.astro";
-// import { Icon } from "astro-icon";
+import { Icon } from "astro-icon";
 ---
 
 <main
-  class="grid lg:grid-cols-2 gap-10 place-items-center p-8 md:px-20 md:py-8 bg-gradient-to-b from-primary-50 via-white">
+  class="grid lg:grid-cols-2 gap-14 place-items-center p-8 md:px-20 md:py-8 bg-gradient-to-b from-primary-50 via-white border-b">
   <div class="pt-6 md:pt-0 md:order-1 order-1 md:block">
     <Picture
       src="/hero.png"
@@ -18,12 +18,14 @@ import Link from "@components/ui/link.astro";
   </div>
   <div>
     <h1
-      class="text-4xl md:text-6xl text-slate-700 font-bold lg:tracking-tight xl:tracking-tighter">
-      Bingung mau <span class="text-primary-500">menjual apa<i>?</i></span>
+      class="text-4xl md:text-5xl text-slate-700 font-bold md:tracking-tight mt-6">
+      Form order produk digital <span class="text-primary-500"
+        >untuk jualan di segala medan<i>!</i></span
+      >
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Coba jual apa yang kamu tahu. Ribuan orang ingin belajar keahlianmu. Jadikan
-      produk, promosikan, dan otomasi penjualanmu dengan JetForm.
+      JetForm adalah software Open Source yang bisa dijadikan alternative selain
+      OrderOnline, Tribelio, Lynk.id dan kawan-kawan.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
@@ -32,16 +34,27 @@ import Link from "@components/ui/link.astro";
         data-umami-event="hero-signup-cta"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <!-- <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" /> -->
-        Daftar Sekarang <span aria-hidden="true">→</span>
+        Daftar Sekarang
       </Link>
       <Link
         size="lg"
         style="outline"
-        href="/demo"
+        href="https://github.com/jetform-dev?utm_source=hero-github-cta&utm_medium=website"
+        target="_blank"
         class="flex gap-1 items-center justify-center">
-        Coba Demo
+        <Icon class="text-primary-600 w-5 h-5" name="mdi:github" />
+        GitHub
       </Link>
     </div>
   </div>
 </main>
+
+<!-- <div class="text-center mt-4">
+  <a
+    href=""
+    class="bg-yellow-50 hover:bg-yellow-100 text-yellow-600 text-sm border border-yellow-600 py-2 px-4 rounded-full"
+    target="_blank"
+    ><Icon class="text-yellow-600 w-4 h-4 me-1 inline" name="mdi:download" /> Download
+    E-book "Zero To Programmer" via JetForm</a
+  >
+</div> -->

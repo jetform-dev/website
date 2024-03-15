@@ -11,12 +11,13 @@ const pricing = [
     price: "5%",
     popular: true,
     features: [
+      "JetForm Cloud (siap pakai, langsung jualan)",
       "Jumlah produk tidak dibatasi (unlimited)",
       "Jumlah penjualan tidak dibatasi (unlimited)",
       "Integrasi dengan aplikasi lain via Zapier",
       "Terima pembayaran instan dengan QRIS (*)",
       "Statistik produk dan analytics",
-      "Penarikan dana tanpa biaya",
+      "Biaya penarikan dana Rp. 5,000",
       "Support via Email, WhatsApp dan Live Chat",
       ["Data export", "segera hadir"],
     ],
@@ -26,22 +27,18 @@ const pricing = [
     },
   },
   {
-    name: "Per Bulan",
-    price: "Rp. 149K",
+    name: "Self Hosted (**)",
+    price: "Gratis",
     popular: false,
     features: [
-      "Jumlah produk tidak dibatasi (unlimited)",
-      "Jumlah penjualan tidak dibatasi (unlimited)",
-      "Integrasi dengan aplikasi lain via Zapier",
-      "Terima pembayaran instan dengan QRIS (*)",
-      "Statistik produk dan analytics",
-      "Penarikan dana tanpa biaya",
-      "Support via Email, WhatsApp dan Live Chat",
-      ["Data export", "segera hadir"],
+      "Deploy sendiri di server Kamu",
+      "Pakai suka-suka Kamu",
+      "Konfigurasi suka-suka Kamu",
+      "Pokoknya suka-suka Kamu deh... ah!",
     ],
     button: {
-      text: "Daftar Sekarang",
-      link: "https://app.jetform.me/signup?utm_source=pricing-monthly-cta&utm_medium=website",
+      text: "GitHub",
+      link: "https://github.com/jetform-dev/jetform?utm_source=pricing-github-cta&utm_medium=website",
     },
   },
 ];
@@ -60,8 +57,10 @@ const pricing = [
       </div>
 
       <p class="text-center text-sm text-slate-500 mt-8">
-        (*) Setiap transaksi dikenakan biaya transaksi QRIS 0,7% oleh Payment Gateway yang
-        kami gunakan.
+        (*) Setiap transaksi dikenakan biaya transaksi QRIS 0,7% oleh Payment
+        Gateway yang kami gunakan.<br />
+        (**) Cara instalasi dan konfigurasi self-hosted belum kami siapkan. Kalau
+        kamu tertarik, silakan hubungi di GitHub.
       </p>
 
       <div class="mt-16 py-4">
@@ -69,22 +68,22 @@ const pricing = [
           <h2 class="text-3xl font-bold text-slate-700">F.A.Q Harga</h2>
           <p class="text-xl mt-1 text-slate-500">
             Berikut beberapa pertanyaan yang sering diajukan mengenai harga
-            layanan kami.
+            layanan.
           </p>
         </div>
 
         <Accordion
           titles={[
-            "Komisi vs Bulanan, mana yang sebaiknya saya pilih?",
-            "Apa bisa pindah dari Komisi ke Bulanan? Atau sebaliknya?",
-            "Apa itu komisi per transaksi?",
+            // "Komisi vs Bulanan, mana yang sebaiknya saya pilih?",
+            // "Apa bisa pindah dari Komisi ke Bulanan? Atau sebaliknya?",
+            "Bagaimana perhitungan komisi per penjualan?",
             "Apakah komisi bisa berubah setiap saat?",
           ]}
           content={[
-            "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak penjualan, maka Komisi adalah pilihan yang tepat karena Anda tidak perlu khawatir dengan biaya bulanan. Namun jika Anda sudah memiliki volume penjualan yang cukup besar, maka harga Bulanan akan lebih hemat.",
-            "Tentu saja bisa. Namun perlu diingat bahwa jika Anda pindah dari Komisi ke Bulanan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Bulanan ke Komisi, maka Anda akan dikenakan komisi per penjualan yang berlaku saat itu.",
-            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk anda, itu adalah satu penjualan. Contoh: Apabila produk anda seharga Rp. 100,000 maka komisi yang kami dapatkan adalah 5% dari harga produk tersebut, yaitu Rp. 5,000 dan Anda akan mendapatkan Rp. 95,000. Namun, perhitungan ini tentu saja tidak berlaku di paket Bulanan.",
-            "Besar kemungkinannya kami akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Anda mendaftar maka semakin kecil komisi yang dikenakan.",
+            // "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak penjualan, maka Komisi adalah pilihan yang tepat karena Anda tidak perlu khawatir dengan biaya bulanan. Namun jika Anda sudah memiliki volume penjualan yang cukup besar, maka harga Bulanan akan lebih hemat.",
+            // "Tentu saja bisa. Namun perlu diingat bahwa jika Anda pindah dari Komisi ke Bulanan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Bulanan ke Komisi, maka Anda akan dikenakan komisi per penjualan yang berlaku saat itu.",
+            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk Kamu, itu adalah satu penjualan. Contoh: Apabila produk Kamu seharga Rp. 100,000 maka akan terkena potongan 5% + 0.7% (QRIS) dari harga produk tersebut, yaitu Rp. 5,700 dan Kamu akan mendapatkan Rp. 94,300.",
+            "Besar kemungkinannya kami akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Kamu mendaftar maka semakin kecil komisi yang dikenakan.",
           ]}
         />
       </div>

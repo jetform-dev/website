@@ -5,40 +5,40 @@ import { Icon } from "astro-icon";
 
 const benefits = [
   {
-    title: "Hemat waktu & tenaga",
+    title: "Spesifik",
     description:
-      "Kamu bisa fokus pada produk dan mencari pembeli. Kami handle pesanan, pembayaran dan pengiriman.",
+      "Fokus menjadi penjualan produk digital, seperti e-book, desain, kode sumber, dan lainnya.",
     icon: "bx:bxs-check-circle",
   },
   {
-    title: "Bebas risiko",
+    title: "Sederhana",
     description:
-      "Bereksperimen sepuasnya tanpa takut rugi. Dengan sistem komisi, kamu bisa langsung jualan tanpa biaya bulanan.",
+      "Doing more with less. Kami percaya akan hal ini. Sebuah fitur ada karena penting, bukan karena terlihat keren.",
     icon: "bx:bxs-check-circle",
   },
   {
-    title: "Buat siapa saja",
+    title: "Terbuka",
     description:
-      "Kamu penjual pemula? atau sudah berpengalaman? JetForm cocok untuk semua level pengalamanmu.",
+      "Open minded dan Open Source. Terbuka untuk ide, masukan, dan diskusi. Juga terbuka dalam pengembangan.",
     icon: "bx:bxs-check-circle",
   },
 ];
 
 const features = [
   {
-    title: "Super Simple",
+    title: "Intuitif",
     description:
       "Cukup sekali lihat, kamu akan langsung paham bagaimana cara menggunakannya.",
     icon: "bx:bxs-check-circle",
   },
   {
-    title: "Super Power",
+    title: "Powerful",
     description:
-      "Menjual produk dengan berbagai varian? dashboard performa produk? Yes, kami punya!",
+      "Menjual produk dengan berbagai varian? bisa. Dashboard performa produk? punya!",
     icon: "bx:bxs-check-circle",
   },
   {
-    title: "Super Flexible",
+    title: "Flexible",
     description:
       "Integrasikan JetForm dengan aplikasi favoritmu, atau gunakan API untuk membuat integrasi khusus.",
     icon: "bx:bxs-check-circle",
@@ -85,18 +85,18 @@ const categories = [
 ];
 ---
 
-<div class="p-8 md:px-20 md:py-20">
+<div class="p-8 md:px-20 md:py-20 bg-gradient-to-b from-primary-50 via-white">
   <div>
     <h2
       class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
-      Online dalam hitungan <span class="font-bold text-primary-500"
-        >Menit<i>!</i></span
+      Makin banyak pilihan, <span class="font-bold text-primary-500"
+        >Makin seru<i>!</i></span
       >
     </h2>
     <p class="text-lg mt-4 text-slate-600 text-center max-w-4xl mx-auto">
-      Kamu bisa jualan hari ini juga. Tidak perlu menunggu berhari-hari atau
-      minggu menunggu websitemu jadi atau sempurna, kamu bisa mulai dengan
-      JetForm dan <i>go-to-market</i> dengan cepat.
+      JetForm ingin menjadi bagian dalam perkembangan bisnis digital di
+      Indonesia. Memberi opsi lain kepada masyarakat bahwa alat menjual yang ada
+      tidak hanya itu-itu saja. Berikut adalah tentang JetForm.
     </p>
   </div>
 
@@ -119,7 +119,8 @@ const categories = [
   </div>
 </div>
 
-<div class="mx-8 md:mx-20 mb-6 md:-mb-6 relative rounded-md md:rounded-xl overflow-hidden shadow-xl">
+<div
+  class="mx-8 md:mx-20 mb-6 md:-mb-6 relative rounded-md md:rounded-xl overflow-hidden shadow-xl">
   <Picture
     src="/dashboard.png"
     width={1440}
@@ -137,12 +138,12 @@ const categories = [
       Simple, <span class="font-bold text-primary-500">yet powerful.</span>
     </h2>
     <p class="text-lg mt-4 text-slate-600 text-center">
-      Kamu ingin menjual banyak dan untung berlimpah, bukan pusing dengan cara
-      menggunakan aplikasi yang kompleks. Kami fokus pada penjual produk
-      digital, hanya menyediakan fitur yang kamu butuhkan. No more, no less!
+      Kami sederhana karena memang didesain sederhana, bukan karena keterbatasan.
+      Menjadi kompleks dan susah digunakan adalah hal terakhir yang kami
+      inginkan. JetForm fokus pada produk digital, hanya menyediakan fitur yang
+      dibutuhkan.
     </p>
   </div>
-
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
     {
       features.map((item) => (
@@ -152,7 +153,7 @@ const categories = [
           </div>
           <div>
             <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>
-            <p class="text-slate-600 mt-2 leading-relaxed">
+            <p class="text-slate-500 mt-2 leading-relaxed">
               {item.description}
             </p>
           </div>
@@ -165,7 +166,7 @@ const categories = [
 <div class="p-8 md:px-20 md:py-20">
   <h2
     class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
-    Masih bingung <span class="font-bold text-primary-500">mau jual apa?</span>
+    Bingung <span class="font-bold text-primary-500">mau jual apa?</span>
   </h2>
   <p class="text-lg mt-4 text-slate-600 text-center">
     Jangan khawatir, memulai bisnis memang kadang membingungkan 😜<br />Berikut
