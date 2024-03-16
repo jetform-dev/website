@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Eka Putra"
-title: "Founder"
+title: "Founder / Maintainer"
 avatar: {
     src: "assets/eka-putra.jpg",
     alt: "Eka Putra"
