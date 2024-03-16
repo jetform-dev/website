@@ -6,26 +6,25 @@ import PricingItem from "@components/ui/pricing-item.astro";
 const { plan } = Astro.props;
 ---
 
-<div>
-  <div
-    class="flex flex-col w-full order-first lg:order-none border border-[#D8DEE9] border-opacity-50 shadow-lg py-5 px-6 rounded-md bg-white">
-    <div class="text-center">
-      <h4 class="text-lg font-medium text-gray-400">{plan.name}</h4><p
-        class="mt-3 text-6xl font-bold text-green-600 md:text-4xl">
-        {
-          plan.price.original && (
-            <span class="mt-1 text-xl font-medium text-gray-300 line-through md:text-2xl">
-              {plan.price.original}
-            </span>
-          )
-        }
-        {
-          plan.price && typeof plan.price === "object"
-            ? plan.price.monthly
-            : plan.price
-        }
-      </p>
-      <!-- <div
+<div
+  class="flex flex-col w-full order-first lg:order-none border border-[#D8DEE9] border-opacity-50 shadow-lg py-5 px-6 rounded-md bg-white">
+  <div class="text-center">
+    <h4 class="text-lg font-medium text-gray-400">{plan.name}</h4><p
+      class="mt-3 text-6xl font-bold text-green-600 md:text-4xl">
+      {
+        plan.price.original && (
+          <span class="mt-1 text-xl font-medium text-gray-300 line-through md:text-2xl">
+            {plan.price.original}
+          </span>
+        )
+      }
+      {
+        plan.price && typeof plan.price === "object"
+          ? plan.price.monthly
+          : plan.price
+      }
+    </p>
+    <!-- <div
         class="my-6 p-4 border border-2 border-dashed border-green-600 rounded-lg animate-bounce">
         <p>
           <strong
@@ -36,25 +35,24 @@ const { plan } = Astro.props;
           transaksi pun bisa berubah (naik) sewaktu-waktu.
         </p>
       </div> -->
-    </div><ul class="grid mt-4 text-left gap-y-4">
-      {
-        plan.features.map((item) => (
-          <li class="flex items-start gap-3 text-gray-800">
-            <Tick class="w-6 h-6" />
-            {typeof item == "object" ? <PricingItem item={item} /> : item}
-          </li>
-        ))
-      }
-    </ul><div class="flex mt-8">
-      <Link
-        href={plan.button.link || "#"}
-        id="pricing-signup-cta"
-        data-umami-event="pricing-signup-cta"
-        block
-        class="font-bold text-lg"
-        style={plan.popular ? "primary" : "outline"}>
-        {plan.button.text || "Get Started"}
-      </Link>
-    </div>
+  </div><ul class="flex-1 mt-4 text-left space-y-4">
+    {
+      plan.features.map((item) => (
+        <li class="flex items-start gap-3 text-gray-800">
+          <Tick class="w-6 h-6" />
+          {typeof item == "object" ? <PricingItem item={item} /> : item}
+        </li>
+      ))
+    }
+  </ul><div class="flex mt-8">
+    <Link
+      href={plan.button.link || "#"}
+      id="pricing-signup-cta"
+      data-umami-event="pricing-signup-cta"
+      block
+      class="font-bold text-lg"
+      style={plan.popular ? "primary" : "outline"}>
+      {plan.button.text || "Get Started"}
+    </Link>
   </div>
 </div>
