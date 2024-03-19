@@ -103,10 +103,10 @@ const categories = [
 ];
 ---
 
-<div class="p-8 md:px-20 md:py-20 bg-gradient-to-b from-primary-50 via-white">
+<div class="p-8 md:px-0 md:py-20 bg-gradient-to-b from-primary-50">
   <div>
     <h2
-      class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+      class="text-2xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
       Kenapa harus coba <span class="font-bold text-primary-500">JetForm?</span>
     </h2>
     <p class="text-lg mt-4 text-slate-600 text-center max-w-4xl mx-auto">
@@ -137,7 +137,7 @@ const categories = [
 </div>
 
 <div
-  class="mx-8 md:mx-20 mb-6 md:-mb-6 relative rounded-md md:rounded-xl overflow-hidden shadow-xl">
+  class="mx-8 md:mx-20 mb-6 md:-mb-8 relative rounded-md md:rounded-lg overflow-hidden shadow-md">
   <Picture
     src="/dashboard.png"
     width={1440}
@@ -148,10 +148,10 @@ const categories = [
   />
 </div>
 
-<div class="p-8 md:px-20 md:py-20 bg-primary-50 border-y">
+<div class="p-8 md:px-20 md:py-20 bg-white border md:rounded-lg">
   <div>
     <h2
-      class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+      class="text-2xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
       JetForm <span class="font-bold text-primary-500">bisa apa saja?</span>
     </h2>
     <p class="text-lg mt-4 text-slate-600 text-center">
@@ -181,19 +181,19 @@ const categories = [
   </div>
 </div>
 
-<div class="p-8 md:px-20 md:py-20">
+<div class="p-8 md:px-0 md:py-20">
   <h2
-    class="text-3xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+    class="text-2xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
     Bingung <span class="font-bold text-primary-500">mau jual apa?</span>
   </h2>
   <p class="text-lg mt-4 text-slate-600 text-center">
     Jangan khawatir, memulai bisnis memang kadang membingungkan 😜<br />Berikut
     adalah beberapa jenis produk yang kamu bisa jual dengan JetForm.
   </p>
-  <div class="text-center mt-4">
+  <div class="text-center mt-4 hidden md:flex">
     <a
       href="https://app.jetform.me/p/zero-to-programmer-ebook?utm_source=jetform-website&utm_medium=product-example-cta"
-      class="bg-yellow-50 hover:bg-yellow-100 text-yellow-600 text-sm border border-yellow-600 py-2 px-4 rounded-full"
+      class="bg-yellow-50 hover:bg-yellow-100 text-yellow-600 text-sm border border-yellow-600 py-2 px-4 rounded-full mx-auto"
       target="_blank"
       ><Icon class="text-yellow-600 w-4 h-4 me-1 inline" name="mdi:download" /> Contoh
       produk: E-book "Zero To Programmer"</a
@@ -202,7 +202,7 @@ const categories = [
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
     {
       categories.map((item) => (
-        <div class="flex gap-4 items-start border rounded-md shadow-md text-center p-6 bg-slate-50">
+        <div class="flex gap-4 items-start border rounded-md shadow-md text-center p-6 bg-white">
           <div>
             <h3 class="font-bold text-lg text-slate-700">{item.title}</h3>
             <p class="text-slate-500 mt-2 leading-relaxed">

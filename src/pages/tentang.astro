@@ -12,13 +12,13 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 ---
 
 <Layout title="Tentang">
-  <Container>
+  <Container class="bg-gradient-to-b from-primary-50 via-white">
     <Sectionhead>
       <Fragment slot="title">Tentang</Fragment>
       <Fragment slot="desc">Di balik lahirnya JetForm.</Fragment>
     </Sectionhead>
 
-    <div class="flex flex-col gap-3 mx-auto p-8 md:px-20">
+    <div class="flex flex-col gap-3 mx-auto p-8 md:px-0">
       <h2 class="font-bold text-xl">
         👋 Halo, saya Eka.
       </h2>
@@ -75,7 +75,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
     <div class="grid md:grid-cols-3 gap-10 mx-auto p-8">
       {
         publishedTeamMembers.map((teamMemberEntry, index) => (
-          <div class="group col-start-2">
+          <div class="group md:col-start-2">
             <div class="w-full aspect-square">
               <Picture
                 src={teamMemberEntry.data.avatar.src}

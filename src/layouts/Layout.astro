@@ -21,7 +21,7 @@ const resolvedImageWithDomain = new URL(
 
 const makeTitle = title
   ? title
-  : "JetForm - Form order Open Source untuk produk digital";
+  : "Form order Open Source untuk produk digital";
 const makeSuffix = title_suffix ? title_suffix : " | JetForm";
 const makeTitleWithSuffix = `${makeTitle}${makeSuffix}`;
 
@@ -75,9 +75,8 @@ const makeDesc = description
       data-website-id="ed597fe6-117f-49c6-98eb-b76fc8c8e96b"></script>
   </head>
   <body
-    class="bg-white bg-auto bg-no-repeat bg-top"
-    style="background-image: url('/rainbow-bg.jpg')">
-    <div class="mx-auto max-w-6xl min-h-full shadow-lg bg-white">
+    class="bg-white">
+    <div class="mx-auto min-h-full">
       <Navbar />
       <slot />
       <Footer />

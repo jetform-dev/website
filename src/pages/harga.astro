@@ -45,13 +45,13 @@ const pricing = [
 ---
 
 <Layout title="Harga Layanan">
-  <Container>
+  <Container class="bg-gradient-to-b from-primary-50 via-white">
     <Sectionhead>
       <Fragment slot="title">Harga Layanan</Fragment>
       <Fragment slot="desc">Sederhana, tanpa basa-basi.</Fragment>
     </Sectionhead>
 
-    <div class="p-8 md:px-20">
+    <div class="p-8 md:px-0">
       <div class="grid md:grid-cols-2 gap-10 mx-auto">
         {pricing.map((item) => <PricingCard plan={item} />)}
       </div>
