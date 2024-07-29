@@ -16,9 +16,10 @@ const pricing = [
       "Jumlah penjualan tidak dibatasi (unlimited)",
       "Integrasi dengan aplikasi lain via Zapier",
       "Terima pembayaran instan dengan QRIS (*)",
+      "Terima pembayaran melalui Bank Transfer (**)",
       "Statistik produk dan analytics",
       "Biaya penarikan dana Rp. 5,000",
-      "Support via Email dan WhatsApp",
+      "Support gratis via Email",
       ["Data export", "segera hadir"],
     ],
     button: {
@@ -27,7 +28,7 @@ const pricing = [
     },
   },
   {
-    name: "Self Hosted (**)",
+    name: "Self Hosted (***)",
     price: "Gratis",
     popular: false,
     features: [
@@ -57,9 +58,11 @@ const pricing = [
       </div>
 
       <p class="text-center text-sm text-slate-500 mt-8">
-        (*) Setiap transaksi dikenakan biaya transaksi QRIS 0,7% oleh Payment
-        Gateway yang kami gunakan.<br />
-        (**) Cara instalasi dan konfigurasi self-hosted belum tersedia. Kalau kamu
+        (*) Setiap transaksi QRIS dikenakan biaya 0,7% oleh Payment Gateway.<br
+        />
+        (**) Setiap pembarayan melalui Transfer Bank dikenakan biaya Rp. 4,000 oleh
+        Payment Gateway.<br />
+        (***) Cara instalasi dan konfigurasi self-hosted belum tersedia. Kalau kamu
         tertarik menggunakan, silakan hubungi maintainer JetForm di GitHub.
       </p>
 
@@ -82,7 +85,7 @@ const pricing = [
           content={[
             // "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak penjualan, maka Komisi adalah pilihan yang tepat karena Anda tidak perlu khawatir dengan biaya bulanan. Namun jika Anda sudah memiliki volume penjualan yang cukup besar, maka harga Bulanan akan lebih hemat.",
             // "Tentu saja bisa. Namun perlu diingat bahwa jika Anda pindah dari Komisi ke Bulanan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Bulanan ke Komisi, maka Anda akan dikenakan komisi per penjualan yang berlaku saat itu.",
-            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk Kamu, itu adalah satu penjualan. Contoh: Apabila produk Kamu seharga Rp. 100,000 maka akan terkena potongan 5% + 0.7% (QRIS) dari harga produk tersebut, yaitu Rp. 5,700 dan Kamu akan mendapatkan Rp. 94,300.",
+            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk Kamu, itu adalah satu penjualan. Contoh: Apabila produk Kamu seharga Rp. 100,000 dan pembeli membayar pakai QRIS, maka akan terkena potongan 5% + 0.7% (QRIS) dari harga produk tersebut, yaitu Rp. 5,700 dan Kamu akan mendapatkan Rp. 94,300.",
             "Besar kemungkinannya kami akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Kamu mendaftar maka semakin kecil komisi yang dikenakan.",
           ]}
         />
