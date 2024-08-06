@@ -16,11 +16,10 @@ const pricing = [
       "Jumlah penjualan tidak dibatasi (unlimited)",
       "Integrasi dengan aplikasi lain via Zapier",
       "Terima pembayaran instan dengan QRIS (*)",
-      "Terima pembayaran melalui Bank Transfer (**)",
+      "Terima pembayaran Bank Transfer melalui VA (**)",
       "Statistik produk dan analytics",
       "Biaya penarikan dana Rp. 5,000",
-      "Support gratis via Email",
-      ["Data export", "segera hadir"],
+      // ["Data export", "segera hadir"],
     ],
     button: {
       text: "Daftar Sekarang",
@@ -60,7 +59,7 @@ const pricing = [
       <p class="text-center text-sm text-slate-500 mt-8">
         (*) Setiap transaksi QRIS dikenakan biaya 0,7% oleh Payment Gateway.<br
         />
-        (**) Setiap pembarayan melalui Transfer Bank dikenakan biaya Rp. 4,000 oleh
+        (**) Setiap transaksi Transfer Bank (Virtual Account) dikenakan biaya antara Rp. 3,500 - 4,500 (tergantung bank) oleh
         Payment Gateway.<br />
         (***) Cara instalasi dan konfigurasi self-hosted belum tersedia. Kalau kamu
         tertarik menggunakan, silakan hubungi maintainer JetForm di GitHub.
@@ -71,7 +70,7 @@ const pricing = [
           <h2 class="text-3xl font-bold text-slate-700">F.A.Q Harga</h2>
           <p class="text-xl mt-1 text-slate-500">
             Berikut beberapa pertanyaan yang sering diajukan mengenai harga
-            layanan.
+            layanan dan pembayaran.
           </p>
         </div>
 
@@ -81,12 +80,14 @@ const pricing = [
             // "Apa bisa pindah dari Komisi ke Bulanan? Atau sebaliknya?",
             "Bagaimana perhitungan komisi per penjualan?",
             "Apakah komisi bisa berubah setiap saat?",
+            "Apakah sistem pembayaran di JetForm aman?"
           ]}
           content={[
             // "Pertama kenali bisnis Anda. Jika Anda baru memulai dan belum memiliki banyak penjualan, maka Komisi adalah pilihan yang tepat karena Anda tidak perlu khawatir dengan biaya bulanan. Namun jika Anda sudah memiliki volume penjualan yang cukup besar, maka harga Bulanan akan lebih hemat.",
             // "Tentu saja bisa. Namun perlu diingat bahwa jika Anda pindah dari Komisi ke Bulanan, maka komisi yang sudah Anda bayarkan tidak bisa dikembalikan. Sebaliknya, jika Anda pindah dari Bulanan ke Komisi, maka Anda akan dikenakan komisi per penjualan yang berlaku saat itu.",
-            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk Kamu, itu adalah satu penjualan. Contoh: Apabila produk Kamu seharga Rp. 100,000 dan pembeli membayar pakai QRIS, maka akan terkena potongan 5% + 0.7% (QRIS) dari harga produk tersebut, yaitu Rp. 5,700 dan Kamu akan mendapatkan Rp. 94,300.",
+            "Pertama, Komisi adalah istilah lain dari potongan per penjualan di JetForm. Setiap kali pembeli melakukan pembayaran terhadap produk Kamu, itu adalah satu penjualan. Contoh: Apabila produk Kamu seharga Rp. 100,000 dan pembeli membayar pakai QRIS, maka akan terkena potongan 5% + 0.7% (QRIS) dari harga produk tersebut, yaitu Rp. 5,700 dan Kamu akan mendapatkan keuntungan bersih sebesar Rp. 94,300.",
             "Besar kemungkinannya kami akan menaikkan komisi di masa depan seiring dengan manfaat dan fitur yang akan terus kami tingkatkan, tetapi hanya untuk pengguna baru. Pengguna yang sudah terdaftar akan tetap menggunakan komisi yang berlaku saat pendaftaran. Oleh karena itu, semakin awal Kamu mendaftar maka semakin kecil komisi yang dikenakan.",
+            "Karena JetForm bukanlah Payment Gateway, maka semua transaksi pembayaran akan dilakukan langsung di Payment Gateway provider yang Kami pilih dan percaya yaitu iPaymu. iPaymu (PT Inti Prima Mandiri Utama) adalah platform solusi pembayaran yang membantu bisnis untuk terhubung dengan penyedia jasa pembayaran (PJP) dengan satu integrasi yang mudah. iPaymu terdaftar di Kementerian Komunikasi dan Informatika Indonesia (Nomor: 004433.01/DJAI.PSE/07/2022) dan tersertifikasi PCIDSS."
           ]}
         />
       </div>
