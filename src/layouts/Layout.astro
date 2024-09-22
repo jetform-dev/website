@@ -21,13 +21,13 @@ const resolvedImageWithDomain = new URL(
 
 const makeTitle = title
   ? title
-  : "Form order Open Source untuk produk digital";
+  : "Form checkout instan untuk jualan produk digital";
 const makeSuffix = title_suffix ? title_suffix : " | JetForm";
 const makeTitleWithSuffix = `${makeTitle}${makeSuffix}`;
 
 const makeDesc = description
   ? description
-  : "JetForm adalah aplikasi Open Source yang bisa dijadikan alternative selain OrderOnline, Tribelio, Lynk.id dan kawan-kawan.";
+  : "Dalam hitungan menit produk Anda sudah siap menerima pembayaran. Hemat waktu, uang, dan tenaga demi mengurusi hal yang lebih penting buat bisnis Anda.";
 ---
 
 <!doctype html>
@@ -72,7 +72,9 @@ const makeDesc = description
     <script
       defer
       src="https://analytics.us.umami.is/script.js"
-      data-website-id="ed597fe6-117f-49c6-98eb-b76fc8c8e96b"></script>
+      data-website-id="ed597fe6-117f-49c6-98eb-b76fc8c8e96b"
+      data-domains="www.jetform.me"></script>
+    <script type="text/javascript" src="https://demo.jetform.me/widget.js" id="jetform-widget-js" defer></script>
   </head>
   <body
     class="bg-white">

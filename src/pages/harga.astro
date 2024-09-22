@@ -11,9 +11,8 @@ const pricing = [
     price: "5%",
     popular: true,
     features: [
-      "JetForm Cloud (siap pakai, langsung jualan)",
       "Jumlah produk tidak dibatasi (unlimited)",
-      "Jumlah penjualan tidak dibatasi (unlimited)",
+      "Jumlah transaksi tidak dibatasi (unlimited)",
       "Integrasi dengan aplikasi lain via Zapier",
       "Terima pembayaran instan dengan QRIS (*)",
       "Terima pembayaran Bank Transfer melalui VA (**)",
@@ -26,21 +25,21 @@ const pricing = [
       link: "https://app.jetform.me/signup?utm_medium=pricing-payg-cta&utm_source=jetform-website",
     },
   },
-  {
-    name: "Self Hosted (***)",
-    price: "Gratis",
-    popular: false,
-    features: [
-      "Deploy sendiri di server Kamu",
-      "Pakai suka-suka Kamu",
-      "Konfigurasi suka-suka Kamu",
-      "Pokoknya suka-suka Kamu deh... ah!",
-    ],
-    button: {
-      text: "GitHub",
-      link: "https://github.com/jetform-dev/jetform?utm_medium=pricing-github-cta&utm_source=jetform-website",
-    },
-  },
+  // {
+  //   name: "Self Hosted (***)",
+  //   price: "Gratis",
+  //   popular: false,
+  //   features: [
+  //     "Deploy sendiri di server Kamu",
+  //     "Pakai suka-suka Kamu",
+  //     "Konfigurasi suka-suka Kamu",
+  //     "Pokoknya suka-suka Kamu deh... ah!",
+  //   ],
+  //   button: {
+  //     text: "GitHub",
+  //     link: "https://github.com/jetform-dev/jetform?utm_medium=pricing-github-cta&utm_source=jetform-website",
+  //   },
+  // },
 ];
 ---
 
@@ -52,7 +51,7 @@ const pricing = [
     </Sectionhead>
 
     <div class="p-8 md:px-0">
-      <div class="grid md:grid-cols-2 gap-10 mx-auto">
+      <div class="grid md:grid-cols-1 gap-10 mx-auto">
         {pricing.map((item) => <PricingCard plan={item} />)}
       </div>
 
