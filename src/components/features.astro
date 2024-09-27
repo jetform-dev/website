@@ -88,11 +88,11 @@ const categories = [
 <div class="p-8 md:px-20 md:py-20">
   <div>
     <h2
-      class="text-2xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+      class="text-2xl lg:text-4xl text-slate-800 font-bold lg:tracking-tight text-center">
       Jualan tenang, tanpa beban
     </h2>
-    <p class="text-lg mt-4 text-slate-600 text-center max-w-4xl mx-auto">
-      Tidak ada biaya bulanan, tidak ada biaya setup, tidak ada biaya tersembunyi. Hanya sedikit komisi di setiap transaksi. Simple - Transparan - Affordable.
+    <p class="text-lg mt-4 text-slate-600 text-center max-w-3xl mx-auto">
+      Tidak ada biaya bulanan, tidak ada biaya setup, tidak ada biaya tersembunyi. Hanya sedikit komisi di setiap transaksi + payment gateway fee.
     </p>
   </div>
 
@@ -100,11 +100,11 @@ const categories = [
     {
       benefits.map((item) => (
         <div class="flex gap-4 items-start">
-          <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
+          <div class="mt-1 bg-primary-600 rounded-full  p-2 w-8 h-8 shrink-0">
             <Icon class="text-white" name={item.icon} />
           </div>
           <div>
-            <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>
+            <h3 class="font-semibold text-lg text-slate-800">{item.title}</h3>
             <p class="text-slate-500 mt-2 leading-relaxed">
               {item.description}
             </p>
@@ -116,24 +116,24 @@ const categories = [
 </div>
 
 <div
-  class="mx-8 md:mx-20 mb-6 relative rounded-md md:rounded-lg overflow-hidden shadow-md">
+  class="mx-8 md:mx-20 mb-6 relative rounded-md md:rounded-lg overflow-hidden shadow-lg">
   <Picture
     src="/dashboard.png"
     width={1440}
     height={600}
-    alt="JetForm - Solusi pintar menjual produk digital"
+    alt="JetForm - Form checkout instan untuk produk digital"
     loading="lazy"
     format="avif"
   />
 </div>
 
-<div class="p-8 md:px-20 md:py-20 bg-white mb-10">
+<div class="p-8 md:px-20 md:py-20 mb-10">
   <div>
     <h2
-      class="text-2xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+      class="text-2xl lg:text-4xl text-slate-800 font-bold lg:tracking-tight text-center">
       Fokus ke bisnis, bukan teknis
     </h2>
-    <p class="text-lg mt-4 text-slate-600 text-center">
+    <p class="text-lg mt-4 text-slate-600 text-center max-w-3xl mx-auto">
       Jangan tunda peluncuran produk Anda dengan menghabiskan banyak waktu, uang, dan tenaga untuk membangun sistem penjualan sendiri. Itu adalah tugas kami, Anda bisa fokus membangun bisnis, membuat produk terbaik dan memasarkan.
     </p>
   </div>
@@ -141,11 +141,11 @@ const categories = [
     {
       features.map((item) => (
         <div class="flex gap-4 items-start">
-          <div class="mt-1 bg-primary-500 rounded-full  p-2 w-8 h-8 shrink-0">
+          <div class="mt-1 bg-primary-600 rounded-full  p-2 w-8 h-8 shrink-0">
             <Icon class="text-white" name={item.icon} />
           </div>
           <div>
-            <h3 class="font-semibold text-lg text-slate-700">{item.title}</h3>
+            <h3 class="font-semibold text-lg text-slate-800">{item.title}</h3>
             <p class="text-slate-500 mt-2 leading-relaxed">
               {item.description}
             </p>
@@ -158,7 +158,7 @@ const categories = [
 
 <!-- <div class="p-8 md:px-0 md:py-20">
   <h2
-    class="text-2xl lg:text-4xl text-slate-700 font-bold lg:tracking-tight text-center">
+    class="text-2xl lg:text-4xl text-slate-800 font-bold lg:tracking-tight text-center">
     Bingung <span class="font-bold text-primary-500">mau jual apa?</span>
   </h2>
   <p class="text-lg mt-4 text-slate-600 text-center">
@@ -179,7 +179,7 @@ const categories = [
       categories.map((item) => (
         <div class="flex gap-4 items-start border rounded-md shadow-md text-center p-6 bg-white">
           <div>
-            <h3 class="font-bold text-lg text-slate-700">{item.title}</h3>
+            <h3 class="font-bold text-lg text-slate-800">{item.title}</h3>
             <p class="text-slate-500 mt-2 leading-relaxed">
               {item.description}
             </p>

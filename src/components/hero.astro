@@ -4,34 +4,22 @@ import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
 
-<main
-  class="grid lg:grid-cols-2 gap-14 place-items-center p-8 md:py-8 md:px-0">
-  <div class="pt-6 md:pt-0 md:order-1 order-1 md:block">
-    <Picture
-      src="/hero.png"
-      width={800}
-      height={600}
-      alt="JetForm - Solusi pintar menjual produk digital"
-      loading="eager"
-      format="avif"
-    />
-  </div>
-  <div>
-    <h1
-      class="text-3xl md:text-5xl text-slate-700 font-semibold md:tracking-tight mt-6 font-sora">
-      Form checkout instan untuk <span class="text-primary-500">produk digital</span>
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Maksimalkan keuntungan Anda dengan platform penjualan yang menangani pemesanan, pembayaran, hingga distribusi produk ke pembeli secara otomatis.
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="/demo"
-        id="hero-demo-cta"
-        data-umami-event="hero-demo-cta"
-        rel="noopener">
-        Coba demo <span aria-hidden="true">→</span>
-      </Link>
-    </div>
+<main class="place-items-center p-20">
+  <h1
+    class="max-w-lg mx-auto text-center text-3xl md:text-5xl text-slate-800 font-semibold md:tracking-tight">
+    Form checkout instan untuk <span class="text-primary-600">produk digital</span>
+  </h1>
+  <p class="max-w-lg mx-auto text-center text-lg mt-4 text-slate-600">
+    Maksimalkan keuntungan Anda dengan platform penjualan yang menangani pemesanan, pembayaran, hingga distribusi produk ke pembeli secara otomatis.
+  </p>
+  <div class="text-center mt-6">
+    <Link
+      href="/demo"
+      id="hero-demo-cta"
+      data-umami-event="hero-demo-cta"
+      size="lg"
+      rel="noopener">
+      Coba demo <span aria-hidden="true">→</span>
+    </Link>
   </div>
 </main>
