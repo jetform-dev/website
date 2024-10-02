@@ -2,99 +2,74 @@
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+
+const demo = [
+  {
+    title: "Sebagai Lead Magnet",
+    description:
+      "Kumpulkan email dengan mudah dari audience Anda dengan membagikan produk gratis. Integrasikan dengan platform email marketing favorit Anda.",
+    url: "https://demo.jetform.id/john/free-product",
+  },
+  {
+    title: "Jual produk premium",
+    description:
+      "Jual produk dengan mudah tanpa perlu membuat website. Pembeli langsung mendapatkan akses begitu pembayaran berhasil.",
+    url: "https://demo.jetform.id/john/paid-product",
+  },
+  {
+    title: "Jual produk dengan varian",
+    description:
+      "Jual produk dengan varian berbeda dalam satu form checkout.",
+    url: "https://demo.jetform.id/john/produk-with-variants",
+  },
+  {
+    title: "Pay as you want",
+    description:
+      "Berikan kebebasan kepada pembeli untuk memberikan harga yang ingin mereka bayar.",
+    url: "https://demo.jetform.id/john/bayar-suka-suka",
+  },
+  {
+    title: "Tampilkan dalam popup widget",
+    description:
+      "Tingkatkan kepercayaan pembeli dengan menampilkan produk dalam popup widget di website Anda.",
+    url: "https://demo.jetform.id/embed/deed6bf6-f3c3-46f4-8199-e0f1fdb0e032",
+    popup: true,
+    badge: true
+  },
+  {
+    title: "Admin Demo",
+    description: "Login sebagai penjual. Gunakan email -> demo@jetform.id dan password -> jetform-demo-pass!",
+    url: "https://demo.jetform.id/signin",
+  },
+];
 ---
 
 <Layout title="Demo">
-  <Container class="bg-gradient-to-b from-primary-50 via-white">
+  <Container class="bg-gradient-to-b from-primary-50 via-white pb-10">
     <Sectionhead>
-      <Fragment slot="title">Demo</Fragment>
-      <Fragment slot="desc">
-        Cara terbaik untuk mengetahui kemampuan JetForm adalah dengan mencobanya secara langsung.
-      </Fragment>
+      <Fragment slot="title">Seeing is believing.</Fragment>
+      <Fragment slot="desc">Cara menggunakan JetForm hanya dibatasi oleh kreatifitas dan imajinasi Anda sendiri. Berikut beberapa contohnya.</Fragment>
     </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto p-8 md:px-0">
-      <h2 class="font-medium text-2xl">🧑‍💼 Demo Pembeli</h2>
-      <p class="text-slate-600">
-        Berikut adalah beberapa link produk Demo yang bisa Anda coba untuk
-        merasakan pengalaman sebagai Pembeli di JetForm:
-      </p>
-      <ul class="text-base leading-relaxed text-slate-500">
-        <li>
-          👉 <strong>Produk Gratis</strong>: <a
-            class="text-primary-600 cursor-pointer"
-            href="https://demo.jetform.id/john/free-product"
-            target="_blank"
-            rel="noopener noreferrer">https://demo.jetform.id/john/free-product</a
-          >
-        </li>
-        <li>
-          👉 <strong>Produk Berbayar</strong>: <a
-            class="text-primary-600 cursor-pointer"
-            href="https://demo.jetform.id/john/paid-product"
-            target="_blank"
-            rel="noopener noreferrer">https://demo.jetform.id/john/paid-product</a
-          >
-        </li>
-        <li>
-          👉 <strong>Produk dengan Varian</strong>: <a
-            class="text-primary-600 cursor-pointer"
-            href="https://demo.jetform.id/john/produk-with-variants"
-            target="_blank"
-            rel="noopener noreferrer"
-            >https://demo.jetform.id/john/produk-with-variants</a
-          >
-        </li>
-        <li>
-          👉 <strong>Popup widget</strong>: 
-          <a class="jetform-button text-primary-600 cursor-pointer" href="https://demo.jetform.id/embed/39c437e5-6e80-4f20-9e09-667cbb7d9204">
-            Klik untuk melihat produk <span class="px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-primary-500 rounded-full">Fitur baru</span>
-          </a>
-        </li>
-      </ul>
-      <p
-        class="text-lg text-yellow-700 border-2 border-dashed border-yellow-500 bg-yellow-50 p-2 rounded-lg">
-        <strong>Jangan khawatir!</strong> Semua link dan produk diatas adalah <i
-          >produk demo</i
-        >, jadi Anda tidak benar-benar melakukan pembelian atau pembayaran
-        nyata.
-      </p>
-
-      <p class="text-slate-600">
-        <strong>Mensimulasikan pembayaran:</strong><br />
-        Jika Anda ingin mensimulasikan pembayaran silahkan gunakan <a
-          class="text-primary-600 cursor-pointer"
-          href="https://sandbox.ipaymu.com/send-notify"
-          target="_blank"
-          rel="noopener noreferrer">Simulator Pembayaran dari iPaymu</a
-        >.
-      </p>
-      <h3 class="font-medium text-2xl mt-6">👩‍💻 Demo penjual</h3>
-      <p class="text-slate-600">
-        Anda bisa login ke aplikasi Demo JetForm yang sudah kami siapkan, cukup
-        login menggunakan Email dan Password di bawah ini:
-      </p>
-      <hr />
-      <ul class="text-base leading-relaxed text-slate-500">
-        <li>
-          <strong>Demo URL</strong>: <a
-            href="https://demo.jetform.id/signin"
-            class="text-primary-600 cursor-pointer"
-            target="_blank"
-            rel="noopener noreferrer">https://demo.jetform.id/signin</a
-          >
-        </li>
-        <li>
-          <strong>Email</strong>: <span class="font-medium text-black"
-            >demo@jetform.id</span
-          >
-        </li>
-        <li>
-          <strong>Password</strong>: <span class="font-medium text-black"
-            >jetform-demo-pass!</span
-          >
-        </li>
-      </ul>
+    <div class="grid sm:grid-cols-2 md:grid-cols-2 mt-10 gap-4 md:gap-8">
+      {
+        demo.map((item) => (
+          <a href={item.url} target="_blank" class={item.popup ? "jetform-button" : ""}>
+          <div class="flex gap-4 items-start border rounded-md shadow-md text-center p-6 bg-white">
+            <div>
+              <h3 class="font-semibold text-lg text-primary-600">
+                {item.title}
+                {item.badge && (
+                  <span class="px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-primary-500 rounded-full">baru</span>
+                )}
+              </h3>
+              <p class="text-slate-500 mt-2 leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        </a>
+        ))
+      }
     </div>
   </Container>
 </Layout>
