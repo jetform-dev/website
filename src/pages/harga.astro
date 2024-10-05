@@ -7,22 +7,27 @@ import Accordion from "@components/ui/accordion.astro";
 import Link from "@components/ui/link.astro";
 const pricing = [
   {
-    name: "Komisi per Penjualan",
-    price: "5%",
+    name: "Komisi per transaksi",
+    // price: "1%",
+    price: {
+      monthly: "1%",
+      original: "5%",
+    },
     popular: true,
     features: [
-      "Jumlah produk tidak dibatasi (unlimited)",
-      "Jumlah transaksi tidak dibatasi (unlimited)",
-      "Integrasi dengan aplikasi lain via Zapier",
-      "Terima pembayaran instan dengan QRIS (*)",
-      "Terima pembayaran Bank Transfer melalui VA (**)",
+      "Jumlah produk tidak dibatasi",
+      "Jumlah transaksi tidak dibatasi",
+      "Integrasi tanpa batas dengan Zapier",
+      "Dukungan terbaik via Email dan WhatsApp",
+      "Terima pembayaran instan dengan QRIS*",
+      "Terima pembayaran Bank melalui Virtual Account**",
       "Statistik produk dan analytics",
       "Biaya penarikan dana Rp. 5,000",
       // ["Data export", "segera hadir"],
     ],
     button: {
       text: "Daftar Sekarang",
-      link: "https://app.jetform.id/signup?utm_medium=pricing-payg-cta&utm_source=jetform-website",
+      link: "https://app.jetform.id/signup?utm_medium=pricing-cta&utm_source=website",
     },
   },
   // {
@@ -37,7 +42,7 @@ const pricing = [
   //   ],
   //   button: {
   //     text: "GitHub",
-  //     link: "https://github.com/jetform-dev/jetform?utm_medium=pricing-github-cta&utm_source=jetform-website",
+  //     link: "https://github.com/jetform-dev/jetform?utm_medium=pricing-github-cta&utm_source=website",
   //   },
   // },
 ];
@@ -46,16 +51,16 @@ const pricing = [
 <Layout title="Harga Layanan">
   <Container class="bg-gradient-to-b from-primary-50 via-white">
     <Sectionhead>
-      <Fragment slot="title">Harga</Fragment>
-      <Fragment slot="desc">Sederhana, tanpa basa-basi.</Fragment>
+      <Fragment slot="title">Sederhana, tanpa risiko.</Fragment>
+      <Fragment slot="desc">Ucapkan selamat tinggal pada biaya operasional yang tinggi bahkan sebelum memulai. Dengan JetForm, Anda hanya membayar biaya operasional (komisi) ketika ada transaksi.</Fragment>
     </Sectionhead>
 
-    <div class="p-8 md:px-0">
+    <div class="p-8 md:px-0 max-w-xl mx-auto">
       <div class="grid md:grid-cols-1 gap-10 mx-auto">
         {pricing.map((item) => <PricingCard plan={item} />)}
       </div>
 
-      <p class="text-center text-sm text-slate-500 mt-8">
+      <p class="text-center text-sm text-slate-400 mt-8">
         (*) Setiap transaksi QRIS dikenakan biaya 0,7% oleh payment processor kami.<br
         />
         (**) Setiap transaksi Transfer Bank (Virtual Account) dikenakan biaya antara Rp. 3,500 - 4,500 (tergantung bank)

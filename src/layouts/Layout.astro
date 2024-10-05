@@ -2,7 +2,6 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
 
 export interface Props {
   title: string;
@@ -27,7 +26,7 @@ const makeTitleWithSuffix = `${makeTitle}${makeSuffix}`;
 
 const makeDesc = description
   ? description
-  : "Dalam hitungan menit produk Anda sudah siap menerima pembayaran. Hemat waktu, uang, dan tenaga demi mengurusi hal yang lebih penting buat bisnis Anda.";
+  : "Maksimalkan keuntungan dengan platform penjualan auto-pilot yang menangani pemesanan, pembayaran, hingga distribusi produk ke pembeli secara otomatis.";
 ---
 
 <!doctype html>
@@ -69,6 +68,9 @@ const makeDesc = description
         },
       }}
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script
       defer
       src="https://analytics.us.umami.is/script.js"

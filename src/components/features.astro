@@ -28,19 +28,19 @@ const features = [
   {
     title: "Sederhana dan intuitif",
     description:
-      "Kelola produk dengan mudah melalui halaman admin yang sederhana dan intuitif.",
+      "Mudah kelola produk melalui halaman admin yang sederhana dan intuitif.",
     icon: "bx:bxs-check-circle",
   },
   {
     title: "Serba otomatis",
     description:
-      "Pembayaran diproses otomatis, produk dikirim otomatis",
+      "Pembayaran diproses secara realtime, produk dikirim secara otomatis.",
     icon: "bx:bxs-check-circle",
   },
   {
     title: "Dukungan terbaik",
     description:
-      "Apabila ada kendala, kami selalu ada untuk Anda via email dan WhatsApp.",
+      "Ada kendala? hubungi kami via email atau WhatsApp layaknya sobat lama.",
     icon: "bx:bxs-check-circle",
   }
 ];
@@ -88,11 +88,11 @@ const categories = [
 <div class="p-8 md:px-20 md:py-20">
   <div>
     <h2
-      class="text-2xl lg:text-4xl text-slate-800 font-bold lg:tracking-tight text-center">
-      Jualan tenang, tanpa beban
+      class="text-2xl lg:text-4xl text-slate-800 font-semibold lg:tracking-tight text-center">
+      Jualan tenang, tanpa dikejar biaya bulanan
     </h2>
-    <p class="text-lg mt-4 text-slate-600 text-center max-w-3xl mx-auto">
-      Tidak ada biaya bulanan, tidak ada biaya setup, tidak ada biaya tersembunyi. Hanya sedikit komisi di setiap transaksi + payment gateway fee.
+    <p class="text-lg mt-4 text-slate-500 text-center max-w-3xl mx-auto">
+      Tidak ada biaya bulanan, tidak ada biaya setup, tidak ada biaya tersembunyi. Hanya sedikit komisi di tiap transaksi. Sederhana, transparan, tanpa gono-gini.
     </p>
   </div>
 
@@ -116,7 +116,7 @@ const categories = [
 </div>
 
 <div
-  class="mx-8 md:mx-20 mb-6 relative rounded-md md:rounded-lg overflow-hidden shadow-lg">
+  class="mx-8 md:mx-20 mb-6 relative rounded-md md:rounded-lg overflow-hidden shadow-lg skew-x-6">
   <Picture
     src="/dashboard.png"
     width={1440}
@@ -130,11 +130,11 @@ const categories = [
 <div class="p-8 md:px-20 md:py-20 mb-10">
   <div>
     <h2
-      class="text-2xl lg:text-4xl text-slate-800 font-bold lg:tracking-tight text-center">
+      class="text-2xl lg:text-4xl text-slate-800 font-semibold lg:tracking-tight text-center">
       Fokus ke bisnis, bukan teknis
     </h2>
-    <p class="text-lg mt-4 text-slate-600 text-center max-w-3xl mx-auto">
-      Jangan tunda peluncuran produk Anda dengan menghabiskan banyak waktu, uang, dan tenaga untuk membangun sistem penjualan sendiri. Itu adalah tugas kami, Anda bisa fokus membangun bisnis, membuat produk terbaik dan memasarkan.
+    <p class="text-lg mt-4 text-slate-500 text-center max-w-3xl mx-auto">
+      Jangan habiskan banyak waktu, uang, dan tenaga untuk membangun sistem penjualan sendiri. Anda fokus membangun bisnis, membuat produk dan memasarkan, sisanya? biarkan kami menangani.
     </p>
   </div>
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
@@ -158,10 +158,10 @@ const categories = [
 
 <!-- <div class="p-8 md:px-0 md:py-20">
   <h2
-    class="text-2xl lg:text-4xl text-slate-800 font-bold lg:tracking-tight text-center">
-    Bingung <span class="font-bold text-primary-500">mau jual apa?</span>
+    class="text-2xl lg:text-4xl text-slate-800 font-semibold lg:tracking-tight text-center">
+    Bingung <span class="font-semibold text-primary-500">mau jual apa?</span>
   </h2>
-  <p class="text-lg mt-4 text-slate-600 text-center">
+  <p class="text-lg mt-4 text-slate-500 text-center">
     Jangan khawatir, kamu bisa mulai dengan menjual apa yang kamu tahu 😜<br />Berikut
     adalah beberapa jenis produk yang kamu bisa jual dengan JetForm.
   </p>
@@ -179,7 +179,7 @@ const categories = [
       categories.map((item) => (
         <div class="flex gap-4 items-start border rounded-md shadow-md text-center p-6 bg-white">
           <div>
-            <h3 class="font-bold text-lg text-slate-800">{item.title}</h3>
+            <h3 class="font-semibold text-lg text-slate-800">{item.title}</h3>
             <p class="text-slate-500 mt-2 leading-relaxed">
               {item.description}
             </p>

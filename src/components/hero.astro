@@ -1,25 +1,28 @@
 ---
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
+import eapImage from "../../public/eap.png";
 ---
 
-<main class="place-items-center p-20">
+<main class="place-items-center pt-20 pb-10">
   <h1
     class="max-w-lg mx-auto text-center text-3xl md:text-5xl text-slate-800 font-semibold md:tracking-tight">
     Form checkout instan untuk <span class="text-primary-600">produk digital</span>
   </h1>
-  <p class="max-w-lg mx-auto text-center text-lg mt-4 text-slate-600">
-    Maksimalkan keuntungan Anda dengan platform penjualan yang menangani pemesanan, pembayaran, hingga distribusi produk ke pembeli secara otomatis.
+  <p class="max-w-lg mx-auto text-center text-lg mt-4 text-slate-500">
+    Maksimalkan keuntungan dengan sistem penjualan auto-pilot yang menangani pemesanan, pembayaran, hingga distribusi produk ke pembeli secara otomatis.
   </p>
-  <div class="text-center mt-6">
+  <div class="text-center mt-10">
     <Link
-      href="/demo"
-      id="hero-demo-cta"
-      data-umami-event="hero-demo-cta"
+      href="https://app.jetform.id/signin?utm_medium=hero-cta&utm_source=website"
+      target="_blank"
+      id="hero-cta"
+      data-umami-event="hero-cta"
       size="lg"
       rel="noopener">
-      Coba demo <span aria-hidden="true">→</span>
+      Daftar Sekarang
     </Link>
+
+    <Image src={eapImage} alt="Early Access Program" class="mx-auto mt-4"/>
   </div>
 </main>
