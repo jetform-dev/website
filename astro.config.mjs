@@ -6,7 +6,7 @@ import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.jetform.me",
+  site: "https://jetform.id",
   integrations: [tailwind(), mdx(), sitemap()],
   adapter: vercel(),
   output: "hybrid"

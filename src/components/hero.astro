@@ -1,16 +1,19 @@
 ---
 import { Image } from "astro:assets";
 import Link from "@components/ui/link.astro";
-import eapImage from "../../public/eap.png";
+import drawing from "../../public/draw-1.png";
 ---
 
-<main class="place-items-center pt-20 pb-10">
+<main class="flex-col place-items-center pt-10 pb-20 px-4">
+  <div class="mx-auto mt-4 max-w-xl mb-6">
+    <Image src={drawing} alt="Jetform bikin jualan happy dan cuan!"/>
+  </div>
   <h1
-    class="max-w-lg mx-auto text-center text-3xl md:text-5xl text-slate-800 font-semibold md:tracking-tight">
+    class="max-w-xl mx-auto text-center text-4xl md:text-5xl text-slate-800 font-semibold md:tracking-tight">
     Form checkout instan untuk <span class="text-primary-600">produk digital</span>
   </h1>
-  <p class="max-w-lg mx-auto text-center text-lg mt-4 text-slate-500">
-    Maksimalkan keuntungan dengan sistem penjualan auto-pilot yang menangani pemesanan, pembayaran, hingga distribusi produk ke pembeli secara otomatis.
+  <p class="max-w-xl mx-auto text-center text-lg mt-4 text-slate-500">
+    Maksimalkan keuntungan dengan sistem penjualan otomatis yang menangani pesanan, pembayaran, hingga distribusi produk.
   </p>
   <div class="text-center mt-10">
     <Link
@@ -22,7 +25,5 @@ import eapImage from "../../public/eap.png";
       rel="noopener">
       Daftar Sekarang
     </Link>
-
-    <Image src={eapImage} alt="Early Access Program" class="mx-auto mt-4"/>
   </div>
 </main>

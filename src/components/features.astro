@@ -1,23 +1,28 @@
 ---
 // @ts-ignore
-import { Picture } from "astro:assets";
 import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import drawing from "../../public/draw-1.png";
+import drawing2 from "../../public/draw-2.png";
+import simpleImage from "../../public/simple.jpg";
+import komisiImage from "../../public/komisi.jpg";
+import Cta from "@components/cta.astro";
 
 const benefits = [
   {
-    title: "Fokus",
+    title: "Terbuka",
     description:
       "Fokus menjadi alat penjualan produk digital, seperti e-book, desain, kode sumber, dan lainnya.",
-    icon: "bx:bxs-check-circle",
+    icon: "bx:bxs-brain",
   },
   {
-    title: "Sederhana",
+    title: "Transparan",
     description:
       "Doing more with less. Sebuah fitur ada karena penting, bukan karena terlihat keren.",
-    icon: "bx:bxs-check-circle",
+    icon: "bx:bxs-check-shield",
   },
   {
-    title: "Terbuka",
+    title: "Kolaboratif",
     description:
       "Open minded dan Open Source. Sangat terbuka dengan ide dan masukan, juga terbuka dalam pengembangan.",
     icon: "bx:bxs-check-circle",
@@ -26,22 +31,22 @@ const benefits = [
 
 const features = [
   {
-    title: "Sederhana dan intuitif",
+    title: "Mudah dipakai",
     description:
       "Mudah kelola produk melalui halaman admin yang sederhana dan intuitif.",
-    icon: "bx:bxs-check-circle",
+    icon: "bx:bxs-bolt-circle",
   },
   {
-    title: "Serba otomatis",
+    title: "Otomatis",
     description:
       "Pembayaran diproses secara realtime, produk dikirim secara otomatis.",
-    icon: "bx:bxs-check-circle",
+    icon: "bx:bxs-cog",
   },
   {
-    title: "Dukungan terbaik",
+    title: "Support terbaik",
     description:
-      "Ada kendala? hubungi kami via email atau WhatsApp layaknya sobat lama.",
-    icon: "bx:bxs-check-circle",
+      "Ngobrol dengan kami via email atau WhatsApp layaknya sobat lama.",
+    icon: "bx:bxs-chat",
   }
 ];
 
@@ -85,58 +90,71 @@ const categories = [
 ];
 ---
 
-<div class="p-8 md:px-20 md:py-20">
+
+<div class="p-8 md:px-20 md:py-20 grid md:grid-cols-2 gap-10">
+  <div class="rounded-lg overflow-hidden shadow-sm border max-h-[240px]">
+    <Image
+    src={simpleImage}
+    alt="JetForm - Form checkout instan untuk produk digital"
+    loading="lazy"
+  />
+  </div>
   <div>
     <h2
-      class="text-2xl lg:text-4xl text-slate-800 font-semibold lg:tracking-tight text-center">
-      Jualan tenang, tanpa dikejar biaya bulanan
+      class="text-2xl lg:text-3xl text-slate-800 font-semibold lg:tracking-tight">
+      Ribet NO, cuan YES<i>!</i>
     </h2>
-    <p class="text-lg mt-4 text-slate-500 text-center max-w-3xl mx-auto">
+    <p class="text-lg mt-4 text-slate-500 max-w-3xl mx-auto">
+      Ketika platform lain menjejalkan fitur yang 99% tidak Anda pakai. Kami adalah angin segar.
+    </p>
+    <p class="text-lg mt-4 text-slate-500 max-w-3xl mx-auto">
+      Saatnya kembali fokus pada konsep dasar menjual yang efektif yaitu produk bagus dan penawaran yang atraktif, yang lain hanyalah distraksi semata.
+    </p>
+  </div>
+</div>
+
+<div class="p-8 md:px-20 md:py-20 grid md:grid-cols-2 gap-10">
+  <div class="md:order-last rounded-lg overflow-hidden shadow-sm border max-h-[220px]">
+    <Image
+    src={komisiImage}
+    alt="JetForm - Form checkout instan untuk produk digital"
+    loading="lazy"
+    class="-mt-4"
+  />
+  </div>
+  <div>
+    <h2
+      class="text-2xl lg:text-3xl text-slate-800 font-semibold lg:tracking-tight">
+      Tidak dikejar biaya bulanan
+    </h2>
+    <p class="text-lg mt-4 text-slate-500 max-w-3xl mx-auto">
       Tidak ada biaya bulanan, tidak ada biaya setup, tidak ada biaya tersembunyi. Hanya sedikit komisi di tiap transaksi. Sederhana, transparan, tanpa gono-gini.
     </p>
   </div>
-
-  <!-- <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
-    {
-      benefits.map((item) => (
-        <div class="flex gap-4 items-start">
-          <div class="mt-1 bg-primary-600 rounded-full  p-2 w-8 h-8 shrink-0">
-            <Icon class="text-white" name={item.icon} />
-          </div>
-          <div>
-            <h3 class="font-semibold text-lg text-slate-800">{item.title}</h3>
-            <p class="text-slate-500 mt-2 leading-relaxed">
-              {item.description}
-            </p>
-          </div>
-        </div>
-      ))
-    }
-  </div> -->
 </div>
 
-<div
-  class="mx-8 md:mx-20 mb-6 relative rounded-md md:rounded-lg overflow-hidden shadow-lg skew-x-6">
-  <Picture
-    src="/dashboard.png"
-    width={1440}
-    height={600}
-    alt="JetForm - Form checkout instan untuk produk digital"
-    loading="lazy"
-    format="avif"
-  />
-</div>
-
-<div class="p-8 md:px-20 md:py-20 mb-10">
+<div class="p-8 md:px-20 md:py-20">
   <div>
     <h2
       class="text-2xl lg:text-4xl text-slate-800 font-semibold lg:tracking-tight text-center">
       Fokus ke bisnis, bukan teknis
     </h2>
     <p class="text-lg mt-4 text-slate-500 text-center max-w-3xl mx-auto">
-      Jangan habiskan banyak waktu, uang, dan tenaga untuk membangun sistem penjualan sendiri. Anda fokus membangun bisnis, membuat produk dan memasarkan, sisanya? biarkan kami menangani.
+      Jangan habiskan banyak waktu, uang, dan tenaga untuk membangun sistem penjualan sendiri. Anda fokus membangun bisnis, membuat produk dan memasarkan, sisanya? serahkan pada ahlinya 😎
     </p>
   </div>
+
+  <div
+  class="my-8 rounded-md md:rounded-lg overflow-hidden shadow-md">
+  <Image
+    src="/dashboard.png"
+    width={1440}
+    height={600}
+    alt="JetForm - Form checkout instan untuk produk digital"
+    loading="lazy"
+  />
+</div>
+
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-10 gap-4 md:gap-8">
     {
       features.map((item) => (
@@ -155,6 +173,28 @@ const categories = [
     }
   </div>
 </div>
+
+<Cta />
+
+<div class="p-8 md:px-20 md:py-10">
+  <div class="max-w-xl mx-auto">
+    <Image
+    src={drawing2}
+    alt="JetForm adalah produk open source"
+    loading="lazy"
+  />
+  </div>
+  <div>
+    <h2
+      class="text-xl lg:text-2xl text-slate-800 font-semibold lg:tracking-tight text-center">
+      We're open source<i>!</i>
+    </h2>
+    <p class="text-base mt-4 text-slate-500 text-center max-w-3xl mx-auto">
+      JetForm adalah produk yang dibangun di publik, kode sumber kami terbuka untuk dilihat, dipelajari bahkan diaudit. Kami juga sangat terbuka untuk kolaborasi dan pengembangan.
+    </p>
+  </div>
+</div>
+
 
 <!-- <div class="p-8 md:px-0 md:py-20">
   <h2
